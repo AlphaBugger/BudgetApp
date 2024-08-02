@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BudgetApp.Views.Templates"
+             x:Class="BudgetApp.Views.HomeView"
+             Shell.NavBarIsVisible="False"
+             >
+
+
+    <Grid RowDefinitions="100,32,28, 220, *, *, *"
+          ColumnDefinitions="*, *, *"
+          RowSpacing="20">
+
+                <Image Source="home_background.png"
+               Aspect="AspectFill"
+               Grid.RowSpan="7" 
+               Grid.ColumnSpan="3" />
+
+
+        <ImageButton Grid.Row="0" Grid.Column="0" Source="dotnet_bot.png" BorderWidth="1" BorderColor="#000" CornerRadius="25" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" Margin="20"/>
+        <Label Grid.Row="1" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Balance Due" FontSize="32"/>
+        <Label Grid.Row="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="0" FontSize="28"/>
+
+        <Border Grid.Row="3"
+                Grid.ColumnSpan="3"
+                Margin="10"
+            Stroke="#C49B33"
+            StrokeThickness="4"
+            StrokeShape="RoundRectangle 100"
+            Background="#2B0B98"
+            HorizontalOptions="Center">
+                <Label
+                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                    Text="Soon to be chart"
+                    TextColor="White"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HeightRequest="200"
+                    WidthRequest="200"/>
+        </Border>
+
+        <local:QuickPaymentViewComponent x:Name="LoanQuickPayment" Grid.Row="4" Grid.ColumnSpan="3"/>
+        <local:QuickPaymentViewComponent x:Name="StocksQuickPayment" Grid.Row="5" Grid.ColumnSpan="3"/>
+        <local:QuickPaymentViewComponent x:Name="CryptoQuickPayment" Grid.Row="6" Grid.ColumnSpan="3"/>
+
+
+    </Grid>
+
+
+</ContentPage>
+

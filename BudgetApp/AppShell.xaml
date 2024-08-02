@@ -7,10 +7,23 @@
     Shell.FlyoutBehavior="Disabled"
     Title="BudgetApp">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.HomeView}"/>
+        </Tab>
+        <Tab Title="Budget">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.BudgetView}"/>
+        </Tab>
+        <Tab Title="Loans">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.LoanView}"/>
+        </Tab>
+        <Tab Title="Invest">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.InvestView}"/>
+        </Tab>
+
+    </TabBar>
+
 
 </Shell>
 

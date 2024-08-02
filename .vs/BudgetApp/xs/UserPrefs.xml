@@ -1,22 +1,32 @@
 ﻿<Properties StartupConfiguration="{EB61E2C3-9B7A-4122-8085-9A847026EA46}|Default">
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BudgetApp FirstBuild="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BudgetApp/AppShell.xaml.cs">
+  <MonoDevelop.Ide.ItemProperties.BudgetApp PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BudgetApp/Views/HomeView.xaml.cs">
     <Files>
-      <File FileName="BudgetApp/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/MainPage.xaml" Line="1" Column="1" />
-      <File FileName="BudgetApp/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/AppShell.xaml.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Views/HomeView.xaml" Line="20" Column="32" />
+      <File FileName="BudgetApp/MauiProgram.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="BudgetApp/BudgetApp.csproj" Line="1" Column="1" />
+      <File FileName="BudgetApp/Resources/Images/home_background.svg" Line="1" Column="1" />
+      <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml" Line="16" Column="52" />
+      <File FileName="BudgetApp/Views/HomeView.xaml.cs" Line="1" Column="26" />
+      <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BudgetApp" expanded="True" selected="True">
+          <Node name="BudgetApp" expanded="True">
             <Node name="BudgetApp">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Resources" expanded="True" />
-              <Node name="Views" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
+              </Node>
+              <Node name="Views">
+                <Node name="Templates" expanded="True" />
+                <Node name="HomeView.xaml" expanded="True">
+                  <Node name="HomeView.xaml.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
