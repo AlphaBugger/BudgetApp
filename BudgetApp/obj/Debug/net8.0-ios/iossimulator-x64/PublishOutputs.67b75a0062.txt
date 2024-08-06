@@ -49,6 +49,10 @@
 /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.Maui.dll
 /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.Maui.Essentials.dll
 /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.Maui.Graphics.dll
+/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/SQLite-net.dll
+/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/SQLitePCLRaw.batteries_v2.dll
+/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/SQLitePCLRaw.core.dll
+/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/SQLitePCLRaw.provider.sqlite3.dll
 /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/BudgetApp.dll
 /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.CSharp.dll
 /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.VisualBasic.Core.dll

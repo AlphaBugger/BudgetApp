@@ -9,8 +9,8 @@
                 StrokeThickness="2"
                 StrokeShape="RoundRectangle 10"
                 Background="#2B0B98"
-                HeightRequest="50">
-            <Grid RowDefinitions="Auto, Auto"
+                HeightRequest="70">
+            <Grid RowDefinitions="*, *"
                   ColumnDefinitions="Auto,Auto,*"
                   >
                 <Label x:Name="PaymentCategoryLabel"

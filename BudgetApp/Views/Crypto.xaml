@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BudgetApp.Views.Crypto"
+             xmlns:local="clr-namespace:BudgetApp.Views.Templates"
+             Title="Crypto">
+
+    <Grid RowDefinitions="250,Auto,Auto"
+          ColumnDefinitions="*,*,*"
+          Margin="10">
+
+        <local:InvestInfoView
+                x:Name="InvestmentType"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+        <local:CustomButtonComponent
+            x:Name="myCoinsButton"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"/>
+        <local:CustomButtonComponent
+            x:Name="buyCoinsButton"
+            Grid.Row="2"
+            Grid.ColumnSpan="3"/>
+
+    </Grid>
+
+</ContentPage>

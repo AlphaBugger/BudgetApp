@@ -19,7 +19,10 @@
             <ShellContent ContentTemplate="{DataTemplate local:Views.LoanView}"/>
         </Tab>
         <Tab Title="Invest">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.InvestView}"/>
+            <ShellContent Title="Stocks"
+                         ContentTemplate="{DataTemplate local:Views.Stocks}" />
+           <ShellContent Title="Crypto"
+                         ContentTemplate="{DataTemplate local:Views.Crypto}" />
         </Tab>
 
     </TabBar>

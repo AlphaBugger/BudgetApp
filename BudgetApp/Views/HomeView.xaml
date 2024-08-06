@@ -18,30 +18,12 @@
 
 
         <ImageButton Grid.Row="0" Grid.Column="0" Source="dotnet_bot.png" BorderWidth="1" BorderColor="#000" CornerRadius="25" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" Margin="20"/>
-        <Label Grid.Row="1" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Balance Due" FontSize="32"/>
-        <Label Grid.Row="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="0" FontSize="28"/>
+        <local:CardView Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
 
-        <Border Grid.Row="3"
-                Grid.ColumnSpan="3"
-                Margin="10"
-            Stroke="#C49B33"
-            StrokeThickness="4"
-            StrokeShape="RoundRectangle 100"
-            Background="#2B0B98"
-            HorizontalOptions="Center">
-                <Label
-                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                    Text="Soon to be chart"
-                    TextColor="White"
-                    FontSize="18"
-                    FontAttributes="Bold"
-                    HeightRequest="200"
-                    WidthRequest="200"/>
-        </Border>
 
         <local:QuickPaymentViewComponent x:Name="LoanQuickPayment" Grid.Row="4" Grid.ColumnSpan="3"/>
         <local:QuickPaymentViewComponent x:Name="StocksQuickPayment" Grid.Row="5" Grid.ColumnSpan="3"/>
-        <local:QuickPaymentViewComponent x:Name="CryptoQuickPayment" Grid.Row="6" Grid.ColumnSpan="3"/>
+        <local:QuickPaymentViewComponent x:Name="CryptoQuickPayment" Grid.Row="6" Grid.ColumnSpan="3" Margin="0,0,0,10"/>
 
 
     </Grid>
