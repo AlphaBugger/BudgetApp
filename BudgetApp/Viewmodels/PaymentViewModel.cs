@@ -1,79 +1,119 @@
-﻿using System;
-using BudgetApp.Models;
+﻿using BudgetApp.Models;
 using BudgetApp.Services;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace BudgetApp.Viewmodels
 {
-	public class PaymentViewModel:BaseViewModel
-	{
-		private Double _money;
-		private SpendingCategory _spendingCategory;
-		private ObservableCollection<PaymentClass> _payments;
-		private readonly PaymentDatabase _paymentDatabase;
+    public class PaymentViewModel : BaseViewModel
+    {
+        private double _money;
+        private SpendingCategory _spendingCategory;
+        private ObservableCollection<PaymentClass> _payments;
+        private readonly DatabaseService<PaymentClass> _paymentDatabase;
+        private readonly DatabaseService<AccountClass> _accountDatabaseService;
+        private AccountClass _account;
+        private PaymentClass _selectedItem;
 
-		public ObservableCollection<SpendingCategory> Categories { get; }
-
-		public Double Total { get; set; }
-
-		public Double Money
-		{
-			get => _money;
-			set => SetProperty(ref _money, value);
-		}
-		public SpendingCategory SpendingCategory
-		{
-			get => _spendingCategory;
-			set => SetProperty(ref _spendingCategory, value);
-		}
-		public ObservableCollection<PaymentClass> Payments
-		{
-			get => _payments;
-			set => SetProperty(ref _payments, value);
-		}
-		public ICommand AddPaymentCommand
-		{
-			get;
-		}
-
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public PaymentViewModel()
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
-			Total = 0;
-			string db = FileSystem.AppDataDirectory + "/payments.db3";
-            _paymentDatabase = new PaymentDatabase(db);
-			Payments = new ObservableCollection<PaymentClass>();
+            string paymentDbPath = FileSystem.AppDataDirectory + "/payments.db3";
+            _paymentDatabase = new DatabaseService<PaymentClass>(paymentDbPath);
+
+            string accountDbPath = FileSystem.AppDataDirectory + "/account.db3";
+            _accountDatabaseService = new DatabaseService<AccountClass>(accountDbPath);
+
+            Payments = new ObservableCollection<PaymentClass>();
             Categories = new ObservableCollection<SpendingCategory>(Enum.GetValues(typeof(SpendingCategory)).Cast<SpendingCategory>());
-			AddPaymentCommand = new Command(async () => await AddPaymentAsync());
-			LoadPayments();
-		}
-		private async void LoadPayments()
-		{
-            var payments = await _paymentDatabase.GetPaymentAsync();
-            Payments.Clear();
-			foreach(var payment in payments)
-			{
-				Payments.Add(payment);
-				Total += payment.Money;
-			}
+            AddPaymentCommand = new Command(async () => await AddPaymentAsync());
+
+            LoadAccount();
+            LoadPayments();
         }
 
-		private async Task AddPaymentAsync()
-		{
-			if(Money>0 && SpendingCategory != SpendingCategory.None)
-			{
-				var payment = new PaymentClass(Money, SpendingCategory);
-				Console.WriteLine(payment);
-				await _paymentDatabase.SavePaymentAsync(payment);
-				Payments.Add(payment);
+        public ObservableCollection<SpendingCategory> Categories { get; }
+        public ObservableCollection<PaymentClass> Payments
+        {
+            get => _payments;
+            set => SetProperty(ref _payments, value);
+        }
+
+        public ICommand AddPaymentCommand { get; }
+
+        public PaymentClass SelectedItem
+        {
+            get => _selectedItem;
+            set => SetProperty(ref _selectedItem, value);
+        }
+
+        public double Total { get; set; }
+
+        public double Money
+        {
+            get => _money;
+            set => SetProperty(ref _money, value);
+        }
+
+        public SpendingCategory SpendingCategory
+        {
+            get => _spendingCategory;
+            set => SetProperty(ref _spendingCategory, value);
+        }
+
+        public AccountClass Account
+        {
+            get => _account;
+            set => SetProperty(ref _account, value);
+        }
+
+        private async void LoadAccount()
+        {
+            // Assume account ID is 1 for now; adjust as needed
+            Account = await _accountDatabaseService.GetItemAsync(1) ?? new AccountClass();
+            OnPropertyChanged(nameof(Account));
+        }
+
+        private async void LoadPayments()
+        {
+            var payments = await _paymentDatabase.GetItemsAsync();
+            Payments.Clear();
+            foreach (var payment in payments)
+            {
+                Payments.Add(payment);
+                Total += payment.Money;
+            }
+        }
+
+        private async Task AddPaymentAsync()
+        {
+            if (Money > 0)
+            {
+                switch (SpendingCategory)
+                {
+                    case SpendingCategory.Crytpo:
+                        Account.CryptoBalance += Money;
+                        break;
+                    case SpendingCategory.Stocks:
+                        Account.StocksBalance += Money;
+                        break;
+                    default:
+                        break;
+                }
+                Account.Balance -= Money;
+                var payment = new PaymentClass(Money, SpendingCategory);
+
+                await _paymentDatabase.SaveItemAsync(payment);
+                Payments.Add(payment);
                 Total += payment.Money;
                 Money = 0;
-				SpendingCategory = SpendingCategory.None;
-			}
-		}
-			
-	}
-}
+                SpendingCategory = SpendingCategory.None;
 
+                // Save updated account information
+                await _accountDatabaseService.UpdateItemAsync(Account);
+                OnPropertyChanged(nameof(Account));
+            }
+        }
+    }
+}

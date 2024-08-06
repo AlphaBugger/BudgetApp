@@ -11,12 +11,13 @@
         </ContentPage.BindingContext>
 
         <StackLayout Padding="10">
+        <Label  Text="{Binding Account.Balance, StringFormat='Balance: {0:C}'}"/>
 
-            <Entry Text="{Binding Money, Mode=TwoWay}" Placeholder="Enter Amount" Keyboard="Numeric"/>
+        <Entry Text="{Binding Money, Mode=TwoWay}" Placeholder="Enter Amount" Keyboard="Numeric"/>
             <Picker ItemsSource="{Binding Categories}" SelectedItem="{Binding SpendingCategory}"/>
             <Button Text="Add payment" Command="{Binding AddPaymentCommand}"/>
             <Label Text="{Binding Total, StringFormat='Total: {0:C}'}" FontSize="22"/>
-            <ListView ItemsSource="{Binding Payments}">
+            <ListView ItemsSource="{Binding Payments}" SelectedItem="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell

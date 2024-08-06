@@ -7,6 +7,8 @@ public partial class HomeView : ContentPage
 	{
         InitializeComponent();
 
+
+
         LoanQuickPayment.PaymentCategory = "Loan:";
         CryptoQuickPayment.PaymentCategory = "Monthly crypto deposit:";
         StocksQuickPayment.PaymentCategory = "Monthly stock deposit:";

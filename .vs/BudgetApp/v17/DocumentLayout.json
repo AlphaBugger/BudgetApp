@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\x\\Desktop\\BudgetApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\viewmodels\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\viewmodels\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\homeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\homeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\models\\paymentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\models\\paymentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\models\\accountclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\models\\accountclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\templates\\cardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\templates\\cardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\budgetview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\budgetview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\stocks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\stocks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\stocks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\stocks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|c:\\users\\x\\desktop\\budgetapp\\budgetapp\\views\\templates\\cardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB61E2C3-9B7A-4122-8085-9A847026EA46}|BudgetApp\\BudgetApp.csproj|solutionrelative:budgetapp\\views\\templates\\cardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Services\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "BudgetApp\\Services\\DatabaseService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwBsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:42:28.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\HomeView.xaml.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\HomeView.xaml.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\HomeView.xaml.cs",
+              "RelativeToolTip": "BudgetApp\\Views\\HomeView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:41:07.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Viewmodels\\PaymentViewModel.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Viewmodels\\PaymentViewModel.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Viewmodels\\PaymentViewModel.cs",
+              "RelativeToolTip": "BudgetApp\\Viewmodels\\PaymentViewModel.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAswFoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:54:20.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CardView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Templates\\CardView.xaml.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\Templates\\CardView.xaml.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Templates\\CardView.xaml.cs",
+              "RelativeToolTip": "BudgetApp\\Views\\Templates\\CardView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:31:33.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CardView.xaml",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Templates\\CardView.xaml",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\Templates\\CardView.xaml",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Templates\\CardView.xaml",
+              "RelativeToolTip": "BudgetApp\\Views\\Templates\\CardView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T10:24:30.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\HomeView.xaml",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\HomeView.xaml",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\HomeView.xaml",
+              "RelativeToolTip": "BudgetApp\\Views\\HomeView.xaml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T10:14:42.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountClass.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Models\\AccountClass.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Models\\AccountClass.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Models\\AccountClass.cs",
+              "RelativeToolTip": "BudgetApp\\Models\\AccountClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T07:29:22.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Viewmodels\\AccountViewModel.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Viewmodels\\AccountViewModel.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Viewmodels\\AccountViewModel.cs",
+              "RelativeToolTip": "BudgetApp\\Viewmodels\\AccountViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T07:33:08.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaymentClass.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Models\\PaymentClass.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Models\\PaymentClass.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Models\\PaymentClass.cs",
+              "RelativeToolTip": "BudgetApp\\Models\\PaymentClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:59:39.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Viewmodels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Viewmodels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Viewmodels\\BaseViewModel.cs",
+              "RelativeToolTip": "BudgetApp\\Viewmodels\\BaseViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:59:03.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BudgetView.xaml",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\BudgetView.xaml",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\BudgetView.xaml",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\BudgetView.xaml",
+              "RelativeToolTip": "BudgetApp\\Views\\BudgetView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T10:54:18.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Stocks.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Stocks.xaml.cs",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\Stocks.xaml.cs",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Stocks.xaml.cs",
+              "RelativeToolTip": "BudgetApp\\Views\\Stocks.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:52:01.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Stocks.xaml",
+              "DocumentMoniker": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Stocks.xaml",
+              "RelativeDocumentMoniker": "BudgetApp\\Views\\Stocks.xaml",
+              "ToolTip": "C:\\Users\\x\\Desktop\\BudgetApp\\BudgetApp\\Views\\Stocks.xaml",
+              "RelativeToolTip": "BudgetApp\\Views\\Stocks.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T10:52:03.86Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

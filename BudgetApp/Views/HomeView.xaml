@@ -2,9 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BudgetApp.Views.Templates"
+             xmlns:viewModel="clr-namespace:BudgetApp.Viewmodels"
              x:Class="BudgetApp.Views.HomeView"
              Shell.NavBarIsVisible="False"
              >
+
+    <ContentPage.BindingContext>
+        <viewModel:AccountViewModel/>
+    </ContentPage.BindingContext>
 
 
     <Grid RowDefinitions="100,32,28, 220, *, *, *"
@@ -18,7 +23,58 @@
 
 
         <ImageButton Grid.Row="0" Grid.Column="0" Source="dotnet_bot.png" BorderWidth="1" BorderColor="#000" CornerRadius="25" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" Margin="20"/>
-        <local:CardView Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+        <Border Grid.Row="1"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3"
+            Margin="10, 0, 10, 0"
+            Stroke="#C49B33"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 10"
+            Background="#2B0B98"
+            HeightRequest="200"
+            Padding="15">
+            <Grid RowDefinitions="25,*, 20, *"
+              ColumnDefinitions="Auto,Auto,*"
+              >
+                <Label
+                Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                Text="{Binding Name}"
+                TextColor="White"
+                FontSize="20"
+                FontAttributes="Bold"/>
+                <Label x:Name="CardNumber"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="**** **** **** 1234"
+                TextColor="White"
+                FontSize="16"
+                FontAttributes="Bold"/>
+                <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Balance"
+                TextColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                Text="{Binding Account.Balance, StringFormat='{0:C}'}"
+                TextColor="White"
+                FontSize="32"
+                FontAttributes="Bold"
+                VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label
+                Grid.Row="1"
+                Grid.Column="2"
+                Text="5/27"
+                TextColor="White"
+                HorizontalOptions="End"/>
+            </Grid>
+        </Border>
 
 
         <local:QuickPaymentViewComponent x:Name="LoanQuickPayment" Grid.Row="4" Grid.ColumnSpan="3"/>

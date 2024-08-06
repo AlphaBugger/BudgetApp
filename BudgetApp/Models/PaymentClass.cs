@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using SQLite;
 namespace BudgetApp.Models
 {
@@ -21,7 +22,9 @@ namespace BudgetApp.Models
         public Double Money {get; set;}
         public SpendingCategory Categories { get; set; }
 
-		public PaymentClass()
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public PaymentClass()
 		{
 		}
 

@@ -12,90 +12,90 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BudgetApp
-build_property.ProjectDir = /Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/
+build_property.ProjectDir = C:\Users\x\Desktop\BudgetApp\BudgetApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/App.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/AppShell.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Resources/Styles/Colors.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Resources/Styles/Styles.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/BudgetView.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/BudgetView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.BudgetView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/BudgetView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/BudgetView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BudgetView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BudgetView.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/Crypto.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/Crypto.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Crypto.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/Crypto.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/Crypto.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Crypto.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Crypto.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/HomeView.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/HomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.HomeView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/HomeView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/HomeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomeView.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/InvestView.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/InvestView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.InvestView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/InvestView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/InvestView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InvestView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InvestView.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/LoanView.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/LoanView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.LoanView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/LoanView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/LoanView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoanView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoanView.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/Stocks.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/Stocks.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Stocks.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/Stocks.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/Stocks.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Stocks.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Stocks.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/Templates/CardView.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/Templates/CardView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Templates.CardView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/Templates/CardView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/Templates/CardView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Templates\CardView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Templates\CardView.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/Templates/CustomButtonComponent.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/Templates/CustomButtonComponent.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Templates.CustomButtonComponent.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/Templates/CustomButtonComponent.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/Templates/CustomButtonComponent.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Templates\CustomButtonComponent.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Templates\CustomButtonComponent.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/Templates/InvestInfoView.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/Templates/InvestInfoView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Templates.InvestInfoView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/Templates/InvestInfoView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/Templates/InvestInfoView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Templates\InvestInfoView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Templates\InvestInfoView.xaml
 
-[/Users/eduard/Desktop/Practica/BudgetApp/BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml]
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Templates.QuickPaymentViewComponent.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/Templates/QuickPaymentViewComponent.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/Templates/QuickPaymentViewComponent.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Templates\QuickPaymentViewComponent.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Templates\QuickPaymentViewComponent.xaml
