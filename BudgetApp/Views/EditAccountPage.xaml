@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:BudgetApp.Viewmodels"
+             x:Class="BudgetApp.Views.EditAccountPage"
+             Title="EditAccountPage"
+             >
+
+    <ContentPage.BindingContext>
+        <viewModel:AccountViewModel/>
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout Margin="10">
+        <Label 
+            Text="Name"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+
+        <Entry
+            Text="{Binding Name}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            WidthRequest="100"/>
+        <Label 
+    Text="Balance"
+    VerticalOptions="Center" 
+    HorizontalOptions="Start" />
+
+        <Entry
+    Text="{Binding Balance}"
+    VerticalOptions="Center" 
+    HorizontalOptions="Start" 
+    WidthRequest="100"/>
+        <Button
+            Text="Save Changes"
+            Command="{Binding EditAccountCommand}"/>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

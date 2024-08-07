@@ -76,7 +76,11 @@
 	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Views\" />
 	  <Folder Include="Views\Templates\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Views\EditAccountPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>

@@ -39,5 +39,9 @@ namespace BudgetApp.Services
         {
             return _database.FindAsync<T>(id);
         }
+        public Task UpdateAccount(int id = 1)
+        {
+            return _database.UpdateAsync(id);
+        }
     }
 }

@@ -22,7 +22,17 @@
                Grid.ColumnSpan="3" />
 
 
-        <ImageButton Grid.Row="0" Grid.Column="0" Source="dotnet_bot.png" BorderWidth="1" BorderColor="#000" CornerRadius="25" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" Margin="20"/>
+        <ImageButton Grid.Row="0" 
+                     Grid.Column="0" 
+                     Source="dotnet_bot.png" 
+                     BorderWidth="1" 
+                     BorderColor="#000" 
+                     CornerRadius="25" 
+                     WidthRequest="50" 
+                     HeightRequest="50" 
+                     HorizontalOptions="Start" 
+                     Margin="20"
+                     Clicked="OnButtonClicked"/>
         <Border Grid.Row="1"
                 Grid.ColumnSpan="3"
                 Grid.RowSpan="3"
@@ -39,7 +49,7 @@
                 <Label
                 Grid.Row="0"
                    Grid.ColumnSpan="3"
-                Text="{Binding Name}"
+                Text="{Binding Account.Name}"
                 TextColor="White"
                 FontSize="20"
                 FontAttributes="Bold"/>

@@ -1,37 +1,73 @@
-﻿using BudgetApp.Models;
+﻿using System.Threading.Tasks;
+using System.Windows.Input;
+using BudgetApp.Models;
 using BudgetApp.Services;
 
 namespace BudgetApp.Viewmodels
 {
     public class AccountViewModel : BaseViewModel
     {
-        private readonly DatabaseService<AccountClass> _accountDatabaseService;
+        private readonly AccountService _accountService;
         private AccountClass _account;
+
+        public ICommand EditAccountCommand { get; }
 
         public AccountViewModel()
         {
             string accountDbPath = FileSystem.AppDataDirectory + "/account.db3";
-            _accountDatabaseService = new DatabaseService<AccountClass>(accountDbPath);
+            _accountService = new AccountService(accountDbPath);
+            EditAccountCommand = new Command(async () => await EditAccountAsync());
+
             LoadAccount();
         }
 
         public AccountClass Account
         {
             get => _account;
-            set => SetProperty(ref _account, value);
+            private set => SetProperty(ref _account, value);
         }
 
-        public string Name => Account?.Name ?? string.Empty;
-        public double Balance => Account?.Balance ?? 0;
+        public string Name
+        {
+            get => _account?.Name ?? string.Empty;
+            set
+            {
+                if (_account != null && _account.Name != value)
+                {
+                    _account.Name = value;
+                    OnPropertyChanged(nameof(Name));
+                }
+            }
+        }
+
+        public double Balance
+        {
+            get => _account?.Balance ?? 0;
+            set
+            {
+                if (_account != null && _account.Balance != value)
+                {
+                    _account.Balance = value;
+                    OnPropertyChanged(nameof(Balance));
+                }
+            }
+        }
 
         private async void LoadAccount()
         {
-            // Load a specific account, typically you would have a way to get the account ID
-            Account = await _accountDatabaseService.GetItemAsync(1) ?? new AccountClass();
+            Account = await _accountService.GetAccountAsync();
             OnPropertyChanged(nameof(Account));
-            //Account.Balance = 10000;
-            //Account.Name = "TestUser";
-            //_accountDatabaseService.UpdateItemAsync(Account);
+        }
+
+        public async Task EditAccountAsync()
+        {
+            if (Account == null) return;
+            Account.Name = Name;
+
+            await _accountService.UpdateAccountAsync(Account);
+            OnPropertyChanged(nameof(Account));
+            LoadAccount();
+            await Shell.Current.GoToAsync("..");
         }
     }
 }

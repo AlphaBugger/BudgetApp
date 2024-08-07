@@ -1,9 +1,9 @@
-﻿using BudgetApp.Models;
-using BudgetApp.Services;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using BudgetApp.Models;
+using BudgetApp.Services;
 
 namespace BudgetApp.Viewmodels
 {
@@ -13,9 +13,10 @@ namespace BudgetApp.Viewmodels
         private SpendingCategory _spendingCategory;
         private ObservableCollection<PaymentClass> _payments;
         private readonly DatabaseService<PaymentClass> _paymentDatabase;
-        private readonly DatabaseService<AccountClass> _accountDatabaseService;
+        private readonly AccountService _accountService;
         private AccountClass _account;
         private PaymentClass _selectedItem;
+        private double _total;
 
         public PaymentViewModel()
         {
@@ -23,7 +24,7 @@ namespace BudgetApp.Viewmodels
             _paymentDatabase = new DatabaseService<PaymentClass>(paymentDbPath);
 
             string accountDbPath = FileSystem.AppDataDirectory + "/account.db3";
-            _accountDatabaseService = new DatabaseService<AccountClass>(accountDbPath);
+            _accountService = new AccountService(accountDbPath);
 
             Payments = new ObservableCollection<PaymentClass>();
             Categories = new ObservableCollection<SpendingCategory>(Enum.GetValues(typeof(SpendingCategory)).Cast<SpendingCategory>());
@@ -48,7 +49,11 @@ namespace BudgetApp.Viewmodels
             set => SetProperty(ref _selectedItem, value);
         }
 
-        public double Total { get; set; }
+        public double Total
+        {
+            get => _total;
+            set => SetProperty(ref _total, value);
+        }
 
         public double Money
         {
@@ -65,13 +70,12 @@ namespace BudgetApp.Viewmodels
         public AccountClass Account
         {
             get => _account;
-            set => SetProperty(ref _account, value);
+            private set => SetProperty(ref _account, value);
         }
 
         private async void LoadAccount()
         {
-            // Assume account ID is 1 for now; adjust as needed
-            Account = await _accountDatabaseService.GetItemAsync(1) ?? new AccountClass();
+            Account = await _accountService.GetAccountAsync();
             OnPropertyChanged(nameof(Account));
         }
 
@@ -111,7 +115,8 @@ namespace BudgetApp.Viewmodels
                 SpendingCategory = SpendingCategory.None;
 
                 // Save updated account information
-                await _accountDatabaseService.UpdateItemAsync(Account);
+                await _accountService.UpdateAccountAsync(Account);
+                LoadAccount(); // Ensure the latest account data is loaded
                 OnPropertyChanged(nameof(Account));
             }
         }

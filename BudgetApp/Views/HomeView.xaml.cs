@@ -15,6 +15,10 @@ public partial class HomeView : ContentPage
 
 
     }
+    private async void OnButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("EditAccountPage");
+    }
 
 }
 

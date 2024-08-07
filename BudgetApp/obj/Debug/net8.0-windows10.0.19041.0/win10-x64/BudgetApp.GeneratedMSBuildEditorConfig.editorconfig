@@ -48,6 +48,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.Crypto.xam
 build_metadata.AdditionalFiles.TargetPath = Views\Crypto.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Crypto.xaml
 
+[C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/EditAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.EditAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditAccountPage.xaml
+
 [C:/Users/x/Desktop/BudgetApp/BudgetApp/Views/HomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BudgetApp.Views.HomeView.xaml

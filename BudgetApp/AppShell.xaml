@@ -25,8 +25,11 @@
                          ContentTemplate="{DataTemplate local:Views.Crypto}" />
         </Tab>
 
-    </TabBar>
+        
 
+    </TabBar>
+    <ShellContent Title="Edit Account"
+              ContentTemplate="{DataTemplate local:Views.EditAccountPage}"/>
 
 </Shell>
 

@@ -13,7 +13,6 @@ namespace BudgetApp.Models
         private double _balance;
         private double _stocksBalance;
         private double _cryptoBalance;
-
         public string Name
         {
             get => _name;
