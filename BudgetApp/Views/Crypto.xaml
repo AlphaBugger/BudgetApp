@@ -3,26 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BudgetApp.Views.Crypto"
              xmlns:local="clr-namespace:BudgetApp.Views.Templates"
-             Title="Crypto">
+             Title="Crypto"
+             xmlns:viewModels="clr-namespace:BudgetApp.Viewmodels"
+             >
+    <ContentPage.BindingContext>
+        <viewModels:CryptoViewModel/>
+    </ContentPage.BindingContext>
 
     <Grid RowDefinitions="250,Auto,Auto"
           ColumnDefinitions="*,*,*"
           Margin="10">
 
-        <local:InvestInfoView
-                x:Name="InvestmentType"
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"/>
+        <Border 
+        Margin="10, 0, 10, 0"
+        Stroke="#C49B33"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 10"
+        Background="#2B0B98"
+        HeightRequest="200"
+        Padding="15">
+            <Grid RowDefinitions="25,*, *, *">
+                <Label
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            Text="{Binding InvestmentType}"
+            TextColor="White"
+            FontSize="20"
+            FontAttributes="Bold"/>
+                <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="Balance:"
+            TextColor="White"
+            FontSize="20"
+            FontAttributes="Bold"
+            VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label
+            Grid.Row="2"
+            Grid.Column="0"
+            Text="{Binding Account.CryptoBalance, StringFormat='{0:C}'}"
+            TextColor="White"
+            FontSize="32"
+            FontAttributes="Bold"
+            VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="{Binding Gain}"
+            TextColor="White"
+            FontSize="20"
+            FontAttributes="Bold"
+            VerticalOptions="Center" HorizontalOptions="Start"/>
+            </Grid>
+        </Border>
         <local:CustomButtonComponent
-            x:Name="myCoinsButton"
+            x:Name="mySharesButton"
             Grid.Row="1"
             Grid.ColumnSpan="3"/>
         <local:CustomButtonComponent
-            x:Name="buyCoinsButton"
+            x:Name="buySharesButton"
             Grid.Row="2"
             Grid.ColumnSpan="3"/>
 
     </Grid>
-
 </ContentPage>

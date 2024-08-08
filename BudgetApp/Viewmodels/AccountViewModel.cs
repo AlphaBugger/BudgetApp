@@ -5,7 +5,7 @@ using BudgetApp.Services;
 
 namespace BudgetApp.Viewmodels
 {
-    public class AccountViewModel : BaseViewModel
+    public class AccountViewModel : NotifyChangesService
     {
         private readonly AccountService _accountService;
         private AccountClass _account;
@@ -27,31 +27,6 @@ namespace BudgetApp.Viewmodels
             private set => SetProperty(ref _account, value);
         }
 
-        public string Name
-        {
-            get => _account?.Name ?? string.Empty;
-            set
-            {
-                if (_account != null && _account.Name != value)
-                {
-                    _account.Name = value;
-                    OnPropertyChanged(nameof(Name));
-                }
-            }
-        }
-
-        public double Balance
-        {
-            get => _account?.Balance ?? 0;
-            set
-            {
-                if (_account != null && _account.Balance != value)
-                {
-                    _account.Balance = value;
-                    OnPropertyChanged(nameof(Balance));
-                }
-            }
-        }
 
         private async void LoadAccount()
         {
@@ -62,7 +37,6 @@ namespace BudgetApp.Viewmodels
         public async Task EditAccountAsync()
         {
             if (Account == null) return;
-            Account.Name = Name;
 
             await _accountService.UpdateAccountAsync(Account);
             OnPropertyChanged(nameof(Account));

@@ -22,7 +22,6 @@ namespace BudgetApp.Models
         public Double Money {get; set;}
         public SpendingCategory Categories { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public PaymentClass()
 		{

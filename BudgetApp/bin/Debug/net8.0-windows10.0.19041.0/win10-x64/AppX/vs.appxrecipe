@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\x\Desktop\BudgetApp\BudgetApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-07T11:43:00.265</Modified>
+      <Modified>2024-08-08T10:35:28.287</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\x\Desktop\BudgetApp\BudgetApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BudgetApp.dll">
       <PackagePath>BudgetApp.dll</PackagePath>
-      <Modified>2024-08-07T11:42:59.954</Modified>
+      <Modified>2024-08-08T10:35:27.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\x\Desktop\BudgetApp\BudgetApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BudgetApp.exe</PackagePath>
-      <Modified>2024-08-07T11:42:59.958</Modified>
+      <Modified>2024-08-08T10:35:27.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\x\Desktop\BudgetApp\BudgetApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

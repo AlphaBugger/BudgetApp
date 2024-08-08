@@ -1,7 +1,53 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BudgetApp.Views.LoanView"
-             >
+             xmlns:vm="clr-namespace:BudgetApp.Viewmodels"
+             Title="Loans">
 
+    <ContentPage.BindingContext>
+        <vm:LoanViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+
+        <!-- Loan Input Fields -->
+        <Entry Placeholder="Loan Amount"
+               Text="{Binding LoanAmount, Mode=TwoWay}"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Interest Rate (%)"
+               Text="{Binding InterestRate, Mode=TwoWay}"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Number of Months"
+               Text="{Binding NumberOfMonths, Mode=TwoWay}"
+               Keyboard="Numeric" />
+
+        <!-- Add Loan Button -->
+        <Button Text="Add Loan"
+                Command="{Binding AddLoanCommand}" />
+
+        <Label Text="{Binding LoanAmount}"/>
+        <Label Text="{Binding InterestRate}"/>
+        <Label Text="{Binding NumberOfMonths}"/>
+
+        <!-- List of Monthly Payments -->
+        <ListView ItemsSource="{Binding Payments}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10"
+                              ColumnDefinitions="*,*,*,*">
+
+                            <Label Grid.Column="0" Text="{Binding Month}" />
+                            <Label Grid.Column="1" Text="{Binding PrincipalAmount, StringFormat='Principal: {0:C}'}" />
+                            <Label Grid.Column="2" Text="{Binding InterestAmount, StringFormat='Interest: {0:C}'}" />
+                            <Label Grid.Column="3" Text="{Binding PaymentAmount, StringFormat='Total: {0:C}'}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
 </ContentPage>

@@ -7,7 +7,7 @@ using BudgetApp.Services;
 
 namespace BudgetApp.Viewmodels
 {
-    public class PaymentViewModel : BaseViewModel
+    public class PaymentViewModel : NotifyChangesService
     {
         private double _money;
         private SpendingCategory _spendingCategory;
