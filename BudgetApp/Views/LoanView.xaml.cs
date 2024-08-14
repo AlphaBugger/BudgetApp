@@ -1,4 +1,7 @@
-﻿namespace BudgetApp.Views;
+﻿using BudgetApp.Models;
+using BudgetApp.Viewmodels;
+
+namespace BudgetApp.Views;
 
 public partial class LoanView : ContentPage
 {
@@ -6,4 +9,5 @@ public partial class LoanView : ContentPage
 	{
 		InitializeComponent();
 	}
+
 }

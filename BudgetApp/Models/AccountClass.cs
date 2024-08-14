@@ -43,6 +43,11 @@ namespace BudgetApp.Models
             get => _cryptoBalance;
             set => SetProperty(ref _cryptoBalance, value);
         }
-
+        public AccountClass()
+        {
+            _name = "Default";
+            _balance = 10000;
+        }
     }
+    
 }

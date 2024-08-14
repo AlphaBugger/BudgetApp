@@ -1,4 +1,6 @@
-﻿namespace BudgetApp.Views.Templates;
+﻿using Microsoft.Maui.Controls;
+
+namespace BudgetApp.Views.Templates;
 
 public partial class CustomButtonComponent : ContentView
 {

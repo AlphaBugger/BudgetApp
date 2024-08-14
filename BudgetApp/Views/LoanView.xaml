@@ -2,16 +2,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BudgetApp.Views.LoanView"
              xmlns:vm="clr-namespace:BudgetApp.Viewmodels"
-             Title="Loans">
+             Title="Loans"
+             x:Name="LoanPage">
 
     <ContentPage.BindingContext>
         <vm:LoanViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout Padding="10">
+    <Grid RowDefinitions="Auto, Auto, *"
+          Padding="10">
+
+        <CollectionView Margin="0"
+                HeightRequest="100"
+                ItemsSource="{Binding Loans}"
+                HorizontalScrollBarVisibility="Always"
+                Grid.Row="0">
+    <CollectionView.ItemsLayout>
+        <LinearItemsLayout Orientation="Horizontal"/>
+    </CollectionView.ItemsLayout>
+
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+            <Border Padding="0" Margin="0">
+                <Grid>
+                    
+                    <StackLayout>
+                        <Label Text="{Binding LoanAmount}" />
+                        <Label Text="{Binding NumberOfMonths}" />
+                        <Button
+                        Command="{Binding
+                            Source={RelativeSource AncestorType={x:Type ContentPage}},
+                            Path=BindingContext.DisplayLoanCommand}"
+                        CommandParameter="{Binding .}"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="75"
+                        CornerRadius="0"
+                        Text="Select"/>
+                    </StackLayout>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
 
         <!-- Loan Input Fields -->
-        <Entry Placeholder="Loan Amount"
+        <StackLayout Grid.Row="1">
+            <Entry Placeholder="Loan Amount"
                Text="{Binding LoanAmount, Mode=TwoWay}"
                Keyboard="Numeric" />
 
@@ -30,24 +66,35 @@
         <Label Text="{Binding LoanAmount}"/>
         <Label Text="{Binding InterestRate}"/>
         <Label Text="{Binding NumberOfMonths}"/>
+        <Label Text="{Binding DebugMessage}"/>
+            </StackLayout>
 
         <!-- List of Monthly Payments -->
-        <ListView ItemsSource="{Binding Payments}">
-            <ListView.ItemTemplate>
+        <CollectionView ItemsSource="{Binding Payments}"
+                        VerticalScrollBarVisibility="Always"
+                        Grid.Row="2">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <Border>
                         <Grid Padding="10"
-                              ColumnDefinitions="*,*,*,*">
+                              ColumnDefinitions="*,*,*,*,*">
 
                             <Label Grid.Column="0" Text="{Binding Month}" />
                             <Label Grid.Column="1" Text="{Binding PrincipalAmount, StringFormat='Principal: {0:C}'}" />
                             <Label Grid.Column="2" Text="{Binding InterestAmount, StringFormat='Interest: {0:C}'}" />
                             <Label Grid.Column="3" Text="{Binding PaymentAmount, StringFormat='Total: {0:C}'}" />
+                            <Button Grid.Column="4" Text="Pay" Command="{Binding
+                            Source={RelativeSource AncestorType={x:Type ContentPage}},
+                            Path=BindingContext.PaySelected}"
+                        CommandParameter="{Binding .}"/>
                         </Grid>
-                    </ViewCell>
+                    </Border>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
 
-    </StackLayout>
+    </Grid>
 </ContentPage>

@@ -1,32 +1,43 @@
 ﻿<Properties StartupConfiguration="{EB61E2C3-9B7A-4122-8085-9A847026EA46}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.64397525-8FE8-4186-92DC-0DBD741F31C7" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BudgetApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.64397525-8FE8-4186-92DC-0DBD741F31C7" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BudgetApp/Views/BudgetView.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BudgetApp/Views/Templates/CustomButtonComponent.xaml.cs">
     <Files>
       <File FileName="BudgetApp/Views/HomeView.xaml" />
-      <File FileName="BudgetApp/MauiProgram.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/MauiProgram.cs" />
       <File FileName="BudgetApp/AppShell.xaml" />
       <File FileName="BudgetApp/BudgetApp.csproj" />
       <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml" />
       <File FileName="BudgetApp/Views/HomeView.xaml.cs" />
-      <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml.cs" Line="13" Column="44" />
+      <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml.cs" />
       <File FileName="BudgetApp/Views/InvestView.xaml" />
-      <File FileName="BudgetApp/Views/Stocks.xaml" Line="20" Column="31" />
-      <File FileName="BudgetApp/Views/Crypto.xaml" Line="13" Column="17" />
-      <File FileName="BudgetApp/Views/Stocks.xaml.cs" Line="11" Column="43" />
-      <File FileName="BudgetApp/Views/BudgetView.xaml" Line="18" Column="67" />
-      <File FileName="BudgetApp/Views/Templates/CardView.xaml" Line="17" Column="23" />
+      <File FileName="BudgetApp/Views/Stocks.xaml" Line="67" Column="34" />
+      <File FileName="BudgetApp/Views/Crypto.xaml" />
+      <File FileName="BudgetApp/Views/Stocks.xaml.cs" />
+      <File FileName="BudgetApp/Views/Templates/CardView.xaml" />
       <File FileName="BudgetApp/Views/Templates/CardView.xaml.cs" />
-      <File FileName="BudgetApp/Views/Templates/InvestInfoView.xaml" Line="43" Column="33" />
-      <File FileName="BudgetApp/Views/Templates/CustomButtonComponent.xaml" Line="10" Column="24" />
-      <File FileName="BudgetApp/Views/Templates/CustomButtonComponent.xaml.cs" />
-      <File FileName="BudgetApp/Views/Templates/InvestInfoView.xaml.cs" Line="13" Column="16" />
-      <File FileName="BudgetApp/Views/Crypto.xaml.cs" Line="11" Column="43" />
-      <File FileName="BudgetApp/Models/PaymentClass.cs" Line="33" Column="1" />
-      <File FileName="BudgetApp/Services/PaymentDatabase.cs" Line="22" Column="41" />
-      <File FileName="BudgetApp/Viewmodels/PaymentViewModel.cs" Line="78" Column="2" />
-      <File FileName="BudgetApp/Viewmodels/BaseViewModel.cs" Line="14" Column="88" />
+      <File FileName="BudgetApp/Views/Templates/InvestInfoView.xaml" />
+      <File FileName="BudgetApp/Views/Templates/CustomButtonComponent.xaml" Line="1" Column="1" />
+      <File FileName="BudgetApp/Views/Templates/CustomButtonComponent.xaml.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Views/Templates/InvestInfoView.xaml.cs" />
+      <File FileName="BudgetApp/Views/Crypto.xaml.cs" />
+      <File FileName="BudgetApp/Models/PaymentClass.cs" Line="1" Column="1" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" />
+      <File FileName="../../../../../usr/local/share/dotnet/packs/Microsoft.iOS.Sdk.net8.0_17.5/17.5.8018/tools/msbuild/iOS/Xamarin.Shared.targets" />
+      <File FileName="BudgetApp/Viewmodels/CryptoViewModel.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Viewmodels/StockViewModel.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Views/LoanView.xaml" Line="91" Column="60" />
+      <File FileName="BudgetApp/Platforms/iOS/Info.plist" />
+      <File FileName="BudgetApp/Platforms/iOS/AppDelegate.cs" />
+      <File FileName="BudgetApp/Viewmodels/AccountViewModel.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Services/AccountService.cs" />
+      <File FileName="BudgetApp/Platforms/iOS/Program.cs" />
+      <File FileName="BudgetApp/Models/AccountClass.cs" />
+      <File FileName="BudgetApp/Services/DatabaseService.cs" />
+      <File FileName="BudgetApp/Views/EditAccountPage.xaml" />
+      <File FileName="BudgetApp/Models/LoanClass.cs" Line="75" Column="44" />
+      <File FileName="BudgetApp/Views/LoanView.xaml.cs" Line="12" Column="1" />
+      <File FileName="BudgetApp/Viewmodels/PaymentViewModel.cs" NotebookId="1" />
+      <File FileName="BudgetApp/Viewmodels/LoanViewModel.cs" Line="129" Column="40" NotebookId="1" />
+      <File FileName="BudgetApp/Views/BudgetView.xaml" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -34,28 +45,28 @@
           <Node name="BudgetApp" expanded="True">
             <Node name="BudgetApp">
               <Node name="Models" expanded="True" />
-              <Node name="Resources" expanded="True" />
-              <Node name="Services" expanded="True" />
               <Node name="Viewmodels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Templates" expanded="True" />
-                <Node name="BudgetView.xaml" selected="True" />
-                <Node name="Stocks.xaml" expanded="True" />
+                <Node name="Templates" expanded="True">
+                  <Node name="CustomButtonComponent.xaml" expanded="True">
+                    <Node name="CustomButtonComponent.xaml.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="LoanView.xaml" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>payment</Value>
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BudgetApp PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

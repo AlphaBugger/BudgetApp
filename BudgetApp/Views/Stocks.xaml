@@ -21,7 +21,8 @@
         StrokeShape="RoundRectangle 10"
         Background="#2B0B98"
         HeightRequest="200"
-        Padding="15">
+        Padding="15"
+        Grid.ColumnSpan="3">
             <Grid RowDefinitions="25,*, *, *">
                 <Label
             Grid.Row="0"

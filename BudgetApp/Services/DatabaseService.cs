@@ -34,6 +34,11 @@ namespace BudgetApp.Services
         {
             return _database.DeleteAsync(item);
         }
+        public Task<int> DeleteItemByIdAsync(int id)
+        {
+            // Using the SQL DELETE command with a WHERE clause
+            return _database.ExecuteAsync("DELETE FROM MyDataModel WHERE Id = ?", id);
+        }
 
         public Task<T> GetItemAsync(int id)
         {

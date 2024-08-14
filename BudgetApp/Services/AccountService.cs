@@ -6,9 +6,8 @@ namespace BudgetApp.Services
     public class AccountService
     {
         private readonly DatabaseService<AccountClass> _accountDatabase;
-        private static AccountClass _account;
+        private static AccountClass? _account;
 
-        private static readonly object _lock = new object();
 
         public AccountService(string databasePath)
         {
