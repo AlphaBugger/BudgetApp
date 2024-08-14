@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="BudgetApp">
 
-    <TabBar>
+    <local:CustomTabBar x:DataType="local:AppShell">
 
         <Tab Title="Home">
             <ShellContent ContentTemplate="{DataTemplate local:Views.HomeView}"/>
@@ -15,21 +15,16 @@
         <Tab Title="Budget">
             <ShellContent ContentTemplate="{DataTemplate local:Views.BudgetView}"/>
         </Tab>
-        <Tab Title="Loans">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.LoanView}"/>
-        </Tab>
         <Tab Title="Invest">
-            <ShellContent Title="Stocks"
-                         ContentTemplate="{DataTemplate local:Views.Stocks}" />
-           <ShellContent Title="Crypto"
-                         ContentTemplate="{DataTemplate local:Views.Crypto}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Views.Stocks}" />
         </Tab>
+        <Tab Title="Crypto">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.Crypto}" />
+        </Tab>
+    </local:CustomTabBar>
 
-        
-
-    </TabBar>
     <ShellContent Title="Edit Account"
-              ContentTemplate="{DataTemplate local:Views.EditAccountPage}"/>
-
+                  ContentTemplate="{DataTemplate local:Views.EditAccountPage}"/>
+    <ShellContent Route="Loans" ContentTemplate="{DataTemplate local:Views.LoanView} "/>
+        
 </Shell>
-

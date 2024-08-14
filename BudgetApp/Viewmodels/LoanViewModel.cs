@@ -17,7 +17,9 @@ namespace BudgetApp.Viewmodels
         private double _interestRate;
         private int _numberOfMonths;
         private ObservableCollection<LoanClass> _loans;
+        private readonly AccountService _accountService;
         public ObservableCollection<MonthlyPayment> _payments;
+        private AccountClass _account;
 
         private string _debugMessage;
 
@@ -30,6 +32,19 @@ namespace BudgetApp.Viewmodels
             DebugMessage = "No Errors yet";
 
             LoadLoans();
+            LoadAccount();
+        }
+
+        public AccountClass Account
+        {
+            get => _account;
+            private set => SetProperty(ref _account, value);
+        }
+
+        private async void LoadAccount()
+        {
+            Account = await _accountService.GetAccountAsync();
+            OnPropertyChanged(nameof(Account));
         }
 
         public string DebugMessage
@@ -130,6 +145,8 @@ namespace BudgetApp.Viewmodels
             
             // Remove the selected payment
             Payments.Remove(selection);
+            Account.Balance -= selection.PaymentAmount;
+
             
             if (Payments.Count == 0)
             {
@@ -145,6 +162,9 @@ namespace BudgetApp.Viewmodels
                 DebugMessage = "succes";
             }
             //DebugMessage = $"{Payments.Count}";
+            await _accountService.UpdateAccountAsync(Account);
+            LoadAccount(); // Ensure the latest account data is loaded
+            OnPropertyChanged(nameof(Account));
         }
        
 

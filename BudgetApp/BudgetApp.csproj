@@ -46,6 +46,12 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -69,6 +75,8 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.71" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="M.BindableProperty.Generator" Version="0.11.1" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,9 +87,13 @@
 	  <None Remove="Resources\Images\home_background.png" />
 	  <None Remove="Views\Templates\" />
 	  <None Remove="Services\" />
+	  <None Remove="Drawable\" />
+	  <None Remove="Handlers\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\Templates\" />
+	  <Folder Include="Drawable\" />
+	  <Folder Include="Handlers\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Views\EditAccountPage.xaml">

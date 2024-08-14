@@ -2,8 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BudgetApp.Views.LoanView"
              xmlns:vm="clr-namespace:BudgetApp.Viewmodels"
-             Title="Loans"
-             x:Name="LoanPage">
+             x:Name="LoanPage"
+             Shell.TabBarIsVisible="False">
 
     <ContentPage.BindingContext>
         <vm:LoanViewModel />

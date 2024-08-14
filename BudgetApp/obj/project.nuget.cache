@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yLeBlBQNiLVk9BRzwlWfmItCquthcAluQxwmv6nQ3onHPwZ40a3RRAWC8WouLTGwlSMCJw6AZcUNqk8q86mjZg==",
+  "dgSpecHash": "ILc957xXh6k0YFv4u2xwvrxl+0ud/MP6G9pbnN75EmtgAqJTg5Jpjk4liIozzjrHueW3h85lz0RJBExgnp8giw==",
   "success": true,
   "projectFilePath": "/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/BudgetApp.csproj",
   "expectedPackageFiles": [
+    "/Users/eduardzepciuc/.nuget/packages/communitytoolkit.maui/9.0.2/communitytoolkit.maui.9.0.2.nupkg.sha512",
+    "/Users/eduardzepciuc/.nuget/packages/communitytoolkit.maui.core/9.0.2/communitytoolkit.maui.core.9.0.2.nupkg.sha512",
     "/Users/eduardzepciuc/.nuget/packages/googlegson/2.10.1.4/googlegson.2.10.1.4.nupkg.sha512",
+    "/Users/eduardzepciuc/.nuget/packages/m.bindableproperty.generator/0.11.1/m.bindableproperty.generator.0.11.1.nupkg.sha512",
     "/Users/eduardzepciuc/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/eduardzepciuc/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/eduardzepciuc/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
