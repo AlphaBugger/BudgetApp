@@ -31,6 +31,9 @@ namespace BudgetApp.Viewmodels
             _payments = new ObservableCollection<MonthlyPayment>();
             DebugMessage = "No Errors yet";
 
+            string accountDbPath = FileSystem.AppDataDirectory + "/account.db3";
+            _accountService = new AccountService(accountDbPath);
+
             LoadLoans();
             LoadAccount();
         }

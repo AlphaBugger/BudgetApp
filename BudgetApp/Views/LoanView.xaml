@@ -3,7 +3,7 @@
              x:Class="BudgetApp.Views.LoanView"
              xmlns:vm="clr-namespace:BudgetApp.Viewmodels"
              x:Name="LoanPage"
-             Shell.TabBarIsVisible="False">
+             >
 
     <ContentPage.BindingContext>
         <vm:LoanViewModel />

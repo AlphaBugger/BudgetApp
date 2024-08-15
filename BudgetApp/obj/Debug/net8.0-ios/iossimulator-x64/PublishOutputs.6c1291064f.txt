@@ -34,6 +34,8 @@
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/zh-Hans/Microsoft.Maui.Controls.resources.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/zh-Hant/Microsoft.Maui.Controls.resources.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/runtimeconfig.bin
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/CommunityToolkit.Maui.dll
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/CommunityToolkit.Maui.Core.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.Extensions.Configuration.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-x64/publish/../BudgetApp.app/Microsoft.Extensions.DependencyInjection.dll

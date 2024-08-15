@@ -21,4 +21,7 @@ public partial class CustomTabBar : TabBar
 
     [AutoBindable]
     public Color? centerViewBackgroundColor;
+
+    [AutoBindable]
+    public Color? buttonColor;
 }

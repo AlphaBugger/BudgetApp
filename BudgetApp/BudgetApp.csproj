@@ -48,9 +48,15 @@
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 	  <LangVersion>preview</LangVersion>
+	  <WarningLevel>4</WarningLevel>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
 	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-maccatalyst|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	  <CodesignKey>Mac Developer</CodesignKey>
+	  <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -87,13 +93,15 @@
 	  <None Remove="Resources\Images\home_background.png" />
 	  <None Remove="Views\Templates\" />
 	  <None Remove="Services\" />
-	  <None Remove="Drawable\" />
 	  <None Remove="Handlers\" />
+	  <None Remove="Themes\" />
+	  <None Remove="Resources\Styles\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\Templates\" />
-	  <Folder Include="Drawable\" />
 	  <Folder Include="Handlers\" />
+	  <Folder Include="Themes\" />
+	  <Folder Include="Resources\Styles\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Views\EditAccountPage.xaml">

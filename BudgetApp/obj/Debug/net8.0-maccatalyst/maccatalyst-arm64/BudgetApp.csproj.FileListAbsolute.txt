@@ -1,6 +1,8 @@
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/BudgetApp.runtimeconfig.json
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/BudgetApp.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/BudgetApp.pdb
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Maui.dll
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Maui.Core.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Microsoft.Extensions.Configuration.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Microsoft.Extensions.DependencyInjection.dll
@@ -306,8 +308,6 @@
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/BudgetApp.pdb
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/BudgetApp.genruntimeconfig.cache
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/ref/BudgetApp.dll
-/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Maui.dll
-/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Maui.Core.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/CommunityToolkit.Maui.Core.stamp
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/CommunityToolkit.Maui.stamp
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/Microsoft.CSharp.stamp

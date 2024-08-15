@@ -3,12 +3,12 @@ using CoreGraphics;
 using Microsoft.Maui.Controls.Platform.Compatibility;
 using UIKit;
 using BudgetApp.Views;
+using Microsoft.Maui.Controls;
 
 namespace BudgetApp
 {
     class CustomShellTabBarAppearanceTracker : ShellTabBarAppearanceTracker
     {
-        private UIButton? _customButton;
 
         public override void UpdateLayout(UITabBarController? controller)
         {
@@ -19,13 +19,26 @@ namespace BudgetApp
             // Ensure TabBar is not null
             if (controller.TabBar == null) return;
 
+            nfloat buttonRadius = 100;  // Adjust as needed
+
+            // Calculate the button's position
+            
+
+            int controlPoint = (int)buttonRadius/2;
+
             // Adjust the frame of the Tab Bar
             controller.TabBar.Frame = new CGRect(
                 controller.TabBar.Frame.X,
-                controller.TabBar.Frame.Y - 50,
+                controller.TabBar.Frame.Y - (buttonRadius/2) - buttonRadius/4,
                 controller.TabBar.Frame.Width,
-                controller.TabBar.Frame.Height + 50
+                controller.TabBar.Frame.Height + (buttonRadius / 2) + buttonRadius / 4
             );
+            controller.TabBar.BackgroundColor = UIColor.Clear; // Ensure it's clear to see the shape layer
+            //controller.View.BackgroundColor = UIColor.Green;
+
+
+            nfloat buttonX = (controller.TabBar.Frame.Width - buttonRadius) / 2;
+            nfloat buttonY = controller.TabBar.Frame.Y - buttonRadius / 2;
 
             // Create a path for the tab bar with a rounded divot in the middle
             var path = new UIBezierPath();
@@ -40,17 +53,17 @@ namespace BudgetApp
             path.AddLineTo(new CGPoint(controller.TabBar.Bounds.Width, 0));
 
             // Top right to Top Left
-            path.AddLineTo(new CGPoint(controller.TabBar.Bounds.Width / 2 + 75, 0));
+            path.AddLineTo(new CGPoint(controller.TabBar.Bounds.Width / 2 + buttonRadius, 0));
             path.AddCurveToPoint(
                 new CGPoint(controller.TabBar.Bounds.Width / 2, controller.TabBar.Bounds.Height / 2),
-                new CGPoint(controller.TabBar.Bounds.Width / 2 + 25, 0),
-                new CGPoint(controller.TabBar.Bounds.Width / 2 + 50, controller.TabBar.Bounds.Height / 2)
+                new CGPoint(controller.TabBar.Bounds.Width / 2 + controlPoint, 0),
+                new CGPoint(controller.TabBar.Bounds.Width / 2 + controlPoint, controller.TabBar.Bounds.Height / 2)
             );
 
             path.AddCurveToPoint(
-                new CGPoint(controller.TabBar.Bounds.Width / 2 - 75, 0),
-                new CGPoint(controller.TabBar.Bounds.Width / 2 - 50, controller.TabBar.Bounds.Height / 2),
-                new CGPoint(controller.TabBar.Bounds.Width / 2 - 25, 0)
+                new CGPoint(controller.TabBar.Bounds.Width / 2 - buttonRadius, 0),
+                new CGPoint(controller.TabBar.Bounds.Width / 2 - controlPoint, controller.TabBar.Bounds.Height / 2),
+                new CGPoint(controller.TabBar.Bounds.Width / 2 - controlPoint, 0)
             );
 
             path.AddLineTo(new CGPoint(0, 0));
@@ -65,45 +78,57 @@ namespace BudgetApp
             var shapeLayer = new CAShapeLayer
             {
                 Frame = controller.TabBar.Bounds,
-                Path = path.CGPath
+                Path = path.CGPath,
+                //FillColor = UIColor.FromRGB(255, 255, 255).CGColor,
+                //BackgroundColor = UIColor.Green.CGColor
+                
             };
+            controller.TabBar.Layer.Mask?.RemoveFromSuperLayer();
+
             controller.TabBar.Layer.Mask = shapeLayer;
 
             // Create a button and add it to the TabBar
-            _customButton = new UIButton(UIButtonType.Plain)
+            UIButton _customButton = new UIButton(UIButtonType.System)
             {
-                BackgroundColor = UIColor.Black// Example color
+                BackgroundColor = UIColor.FromRGB(238, 238, 238)
                 
             };
 
             // Set the button's size
-            nfloat buttonWidth = 75;  // Adjust as needed
-            nfloat buttonHeight = 75;  // Adjust as needed
-
-            // Calculate the button's position
-            nfloat buttonX = (controller.TabBar.Frame.Width - buttonWidth) / 2;
-            nfloat buttonY = controller.TabBar.Frame.Y - buttonHeight / 2;
+           
 
             // Set the button's frame
-            _customButton.Frame = new CGRect(buttonX, buttonY, buttonWidth, buttonHeight);
+            _customButton.Frame = new CGRect(buttonX, buttonY, buttonRadius, buttonRadius);
 
             // Make the button circular
-            _customButton.Layer.CornerRadius = buttonHeight / 2;
+            _customButton.Layer.CornerRadius = buttonRadius / 2;
             _customButton.ClipsToBounds = true;
 
             // Ensure View is not null
             controller.View?.AddSubview(_customButton);
 
             _customButton.TouchUpInside += (sender, e) => HandleButtonClick(controller);
-            _customButton.SetTitle("Loan", UIControlState.Normal); // Set button text
+            _customButton.SetTitleColor(UIColor.FromRGB(0, 0, 0), UIControlState.Normal); // Example color: black
+
+            // Optionally, set the title of the button
+            _customButton.SetTitle("Loan", UIControlState.Normal);
         }
 
-        private async void HandleButtonClick(UITabBarController controller)
+        private void HandleButtonClick(UITabBarController controller)
         {
-            // Navigate to the "Loans" tab
-            await Shell.Current.GoToAsync("Loans");
-            
+            // Assuming the LoanView is the second tab (index 1)
+            // You should adjust the index based on the actual position of your Loan tab
+            var loanTabIndex = 2; // Adjust this index to match the position of your Loan tab
+
+            // Ensure the controller and its view controllers are not null
+            if (controller?.ViewControllers == null || controller.ViewControllers.Length <= loanTabIndex)
+                return;
+
+            // Select the Loan tab
+            controller.SelectedIndex = loanTabIndex;
         }
+
+
 
     }
 }

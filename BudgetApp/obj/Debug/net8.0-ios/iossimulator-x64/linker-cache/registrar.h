@@ -136,6 +136,29 @@
 
 @class Microsoft_Maui_MauiUIApplicationDelegate;
 @class AppDelegate;
+@class Microsoft_Maui_Controls_Handlers_Compatibility_ShellRenderer;
+@class BudgetApp_CustomShellHandler;
+@class Microsoft_Maui_Controls_Platform_Compatibility_ShellItemRenderer;
+@class BudgetApp_CustomShellItemRenderer;
+@class Microsoft_iOS__UIKit_UIGestureRecognizerDelegate;
+@class CommunityToolkit_Maui_Behaviors_TouchBehavior_TouchUITapGestureRecognizer_TouchUITapGestureRecognizerDelegate;
+@class CommunityToolkit_Maui_Behaviors_TouchBehavior_TouchUITapGestureRecognizer;
+@class CommunityToolkit_Maui_Core_Views_AlertView;
+@class CommunityToolkit_Maui_Core_Views_PaddedButton;
+@class CommunityToolkit_Maui_Core_Views_PaddedLabel;
+@class CommunityToolkit_Maui_Core_Views_RoundedView;
+@class PlatformGraphicsView;
+@class Microsoft_Maui_Platform_PlatformTouchGraphicsView;
+@class CommunityToolkit_Maui_Core_Views_MauiDrawingView;
+@class Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate;
+@class Microsoft_iOS__UIKit_UIPopoverPresentationControllerDelegate;
+@class CommunityToolkit_Maui_Core_Views_MauiPopup_PopoverDelegate;
+@class CommunityToolkit_Maui_Core_Views_MauiPopup;
+@class CommunityToolkit_Maui_Core_Views_PopupExtensions_TransparentPopoverBackgroundView;
+@class Microsoft_Maui_Platform_MauiView;
+@class Microsoft_Maui_Platform_ContentView;
+@protocol UIAccessibilityContainer;
+@class CommunityToolkit_Maui_Core_Views_MauiSemanticOrderView;
 @class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CellTableViewCell;
 @class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewCell;
 @class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TemplatedCell;
@@ -286,7 +309,6 @@
 @class Microsoft_Maui_Controls_Platform_ControlsModalWrapper;
 @class Microsoft_Maui_Controls_Platform_Compatibility_UIContainerView;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellFlyoutHeaderContainer;
-@class Microsoft_Maui_Controls_Platform_Compatibility_ShellItemRenderer;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellSearchResultsRenderer;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellTableViewController;
 @class Microsoft_Maui_Controls_Platform_Compatibility_UIContainerCell;
@@ -340,7 +362,6 @@
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellFlyoutContentRenderer;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellFlyoutRenderer;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellPageRendererTracker_TitleViewContainer;
-@class Microsoft_iOS__UIKit_UIGestureRecognizerDelegate;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellSectionRenderer_GestureDelegate;
 @class Microsoft_iOS__UIKit_UINavigationControllerDelegate;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellSectionRenderer_NavDelegate;
@@ -353,8 +374,6 @@
 @class Microsoft_Maui_Controls_Handlers_Items_MauiCollectionView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_PhoneFlyoutPageRenderer_ChildViewController;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_PhoneFlyoutPageRenderer;
-@class Microsoft_Maui_Platform_MauiView;
-@class Microsoft_Maui_Platform_ContentView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_FrameRenderer_FrameView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_FrameRenderer;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_ContextActionsCell_MoreActionSheetController;
@@ -369,7 +388,6 @@
 @class Microsoft_Maui_Controls_Handlers_Compatibility_NavigationRenderer_MauiControlsNavigationBar;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_NavigationRenderer_Container;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_NavigationRenderer;
-@class Microsoft_Maui_Controls_Handlers_Compatibility_ShellRenderer;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_TabbedRenderer;
 @class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ToolbarItemExtensions_PrimaryToolbarItem;
 @class Microsoft_iOS__UIKit_UIContextMenuInteractionDelegate;
@@ -385,7 +403,6 @@
 @class Microsoft_Maui_Platform_ContainerViewController;
 @class Microsoft_Maui_Platform_LayoutView;
 @class Microsoft_Maui_Platform_MauiActivityIndicator;
-@class PlatformGraphicsView;
 @class Microsoft_Maui_Platform_MauiBoxView;
 @class Microsoft_Maui_Platform_MauiCALayer;
 @class Microsoft_Maui_Platform_MauiCheckBox;
@@ -416,10 +433,8 @@
 @class Microsoft_Maui_Platform_MauiUIContextMenuInteraction;
 @class Microsoft_Maui_Platform_MauiWebViewUIDelegate;
 @class Microsoft_Maui_Platform_MauiWKWebView;
-@class Microsoft_Maui_Platform_PlatformTouchGraphicsView;
 @class Microsoft_Maui_WindowOverlay_PassthroughView;
 @class Microsoft_Maui_Authentication_AuthManager;
-@class Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate;
 @class Microsoft_Maui_ApplicationModel_UIPresentationControllerDelegate;
 @class Microsoft_iOS__UIKit_UIActivityItemSource;
 @class Microsoft_Maui_ApplicationModel_DataTransfer_ShareActivityItemSource;
@@ -914,7 +929,6 @@
 @class Microsoft_iOS__UIKit_NSTextStorageDelegate;
 @class Microsoft_iOS__UIKit_NSTextViewportLayoutControllerDelegate;
 @class Microsoft_iOS__UIKit_UIAccelerometerDelegate;
-@protocol UIAccessibilityContainer;
 @class Microsoft_iOS__UIKit_UIAccessibilityContainerDataTable;
 @class Microsoft_iOS__UIKit_UIActionSheetDelegate;
 @class Microsoft_iOS__UIKit_UIAlertViewDelegate;
@@ -963,7 +977,6 @@
 @class Microsoft_iOS__UIKit_UIPickerViewDataSource;
 @class Microsoft_iOS__UIKit_UIPointerInteractionDelegate;
 @class Microsoft_iOS__UIKit_UIPopoverControllerDelegate;
-@class Microsoft_iOS__UIKit_UIPopoverPresentationControllerDelegate;
 @class Microsoft_iOS__UIKit_UIPreviewInteractionDelegate;
 @class Microsoft_iOS__UIKit_UIPrinterPickerControllerDelegate;
 @class Microsoft_iOS__UIKit_UIPrintInteractionControllerDelegate;
@@ -1270,6 +1283,191 @@
 @end
 
 @interface AppDelegate : Microsoft_Maui_MauiUIApplicationDelegate<UIApplicationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Handlers_Compatibility_ShellRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) prefersHomeIndicatorAutoHidden;
+	-(BOOL) prefersStatusBarHidden;
+	-(NSInteger) preferredStatusBarUpdateAnimation;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Platform_Compatibility_ShellItemRenderer : UITabBarController<UINavigationControllerDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIViewController *) selectedViewController;
+	-(void) setSelectedViewController:(UIViewController *)p0;
+	-(void) navigationController:(UINavigationController *)p0 didShowViewController:(UIViewController *)p1 animated:(BOOL)p2;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(void) viewWillLayoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_iOS__UIKit_UIGestureRecognizerDelegate : NSObject<UIGestureRecognizerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_AlertView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_PaddedButton : UIButton {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_PaddedLabel : UILabel {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(CGSize) intrinsicContentSize;
+	-(void) drawTextInRect:(CGRect)p0;
+	-(CGRect) textRectForBounds:(CGRect)p0 limitedToNumberOfLines:(void *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_RoundedView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) drawRect:(CGRect)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface PlatformGraphicsView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) willMoveToSuperview:(UIView *)p0;
+	-(void) drawRect:(CGRect)p0;
+	-(CGRect) bounds;
+	-(void) setBounds:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Platform_PlatformTouchGraphicsView : PlatformGraphicsView {
+}
+	-(void) layoutSubviews;
+	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_MauiDrawingView : Microsoft_Maui_Platform_PlatformTouchGraphicsView {
+}
+	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIPopoverPresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_MauiPopup : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewWillTransitionToSize:(CGSize)p0 withTransitionCoordinator:(id)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Platform_MauiView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) safeAreaInsetsDidChange;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) layoutSubviews;
+	-(void) setNeedsLayout;
+	-(void) didMoveToWindow;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Platform_ContentView : Microsoft_Maui_Platform_MauiView {
+}
+	-(void) layoutSubviews;
+	-(void) willRemoveSubview:(UIView *)p0;
+	-(id) init;
+@end
+
+@protocol UIAccessibilityContainer
+	@required -(void *) accessibilityElementCount;
+	@required -(NSObject *) accessibilityElementAtIndex:(void *)p0;
+	@required -(void *) indexOfAccessibilityElement:(NSObject *)p0;
+	@required -(NSObject *) accessibilityElements;
+	@required -(void) setAccessibilityElements:(NSObject *)p0;
+	@required -(NSInteger) accessibilityContainerType;
+	@required -(void) setAccessibilityContainerType:(NSInteger)p0;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_MauiSemanticOrderView : Microsoft_Maui_Platform_ContentView {
 }
 	-(id) init;
 @end
@@ -2103,23 +2301,6 @@
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
-@interface Microsoft_Maui_Controls_Platform_Compatibility_ShellItemRenderer : UITabBarController<UINavigationControllerDelegate> {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	-(UIViewController *) selectedViewController;
-	-(void) setSelectedViewController:(UIViewController *)p0;
-	-(void) navigationController:(UINavigationController *)p0 didShowViewController:(UIViewController *)p1 animated:(BOOL)p2;
-	-(void) viewDidLayoutSubviews;
-	-(void) viewDidLoad;
-	-(void) viewWillLayoutSubviews;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
 @interface Microsoft_Maui_Controls_Platform_Compatibility_ShellSearchResultsRenderer : UITableViewController {
 }
 	-(void) release;
@@ -2462,11 +2643,6 @@
 	-(CGSize) sizeThatFits:(CGSize)p0;
 @end
 
-@interface Microsoft_iOS__UIKit_UIGestureRecognizerDelegate : NSObject<UIGestureRecognizerDelegate> {
-}
-	-(id) init;
-@end
-
 @interface Microsoft_iOS__UIKit_UINavigationControllerDelegate : NSObject<UINavigationControllerDelegate> {
 }
 	-(id) init;
@@ -2590,30 +2766,6 @@
 	-(id) init;
 @end
 
-@interface Microsoft_Maui_Platform_MauiView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	-(void) safeAreaInsetsDidChange;
-	-(CGSize) sizeThatFits:(CGSize)p0;
-	-(void) layoutSubviews;
-	-(void) setNeedsLayout;
-	-(void) didMoveToWindow;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Microsoft_Maui_Platform_ContentView : Microsoft_Maui_Platform_MauiView {
-}
-	-(void) layoutSubviews;
-	-(void) willRemoveSubview:(UIView *)p0;
-	-(id) init;
-@end
-
 @interface Microsoft_Maui_Controls_Handlers_Compatibility_FrameRenderer : Microsoft_Maui_Controls_Handlers_Compatibility_VisualElementRenderer_1 {
 }
 	-(void) addSubview:(UIView *)p0;
@@ -2652,23 +2804,6 @@
 	-(BOOL) navigationBar:(UINavigationBar *)p0 shouldPopItem:(UINavigationItem *)p1;
 	-(UIViewController *) childViewControllerForStatusBarHidden;
 	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Microsoft_Maui_Controls_Handlers_Compatibility_ShellRenderer : UIViewController {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	-(BOOL) prefersHomeIndicatorAutoHidden;
-	-(BOOL) prefersStatusBarHidden;
-	-(NSInteger) preferredStatusBarUpdateAnimation;
-	-(void) viewDidLayoutSubviews;
-	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
@@ -2738,21 +2873,6 @@
 	-(void) drawRect:(CGRect)p0;
 	-(void) layoutSubviews;
 	-(void) didMoveToWindow;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface PlatformGraphicsView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	-(void) willMoveToSuperview:(UIView *)p0;
-	-(void) drawRect:(CGRect)p0;
-	-(CGRect) bounds;
-	-(void) setBounds:(CGRect)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
@@ -3078,21 +3198,6 @@
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
 	-(void) didMoveToWindow;
 	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface Microsoft_Maui_Platform_PlatformTouchGraphicsView : PlatformGraphicsView {
-}
-	-(void) layoutSubviews;
-	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(id) init;
-@end
-
-@interface Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate> {
-}
-	-(id) init;
 @end
 
 @interface Microsoft_iOS__UIKit_UIActivityItemSource : NSObject<UIActivityItemSource> {
@@ -8165,16 +8270,6 @@
 	-(id) init;
 @end
 
-@protocol UIAccessibilityContainer
-	@required -(void *) accessibilityElementCount;
-	@required -(NSObject *) accessibilityElementAtIndex:(void *)p0;
-	@required -(void *) indexOfAccessibilityElement:(NSObject *)p0;
-	@required -(NSObject *) accessibilityElements;
-	@required -(void) setAccessibilityElements:(NSObject *)p0;
-	@required -(NSInteger) accessibilityContainerType;
-	@required -(void) setAccessibilityContainerType:(NSInteger)p0;
-@end
-
 @interface Microsoft_iOS__UIKit_UIAccessibilityContainerDataTable : NSObject<UIAccessibilityContainerDataTable> {
 }
 	-(id) init;
@@ -8411,11 +8506,6 @@
 @end
 
 @interface Microsoft_iOS__UIKit_UIPopoverControllerDelegate : NSObject<UIPopoverControllerDelegate> {
-}
-	-(id) init;
-@end
-
-@interface Microsoft_iOS__UIKit_UIPopoverPresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate> {
 }
 	-(id) init;
 @end

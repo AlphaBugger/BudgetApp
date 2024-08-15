@@ -1,30 +1,35 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Shell
     x:Class="BudgetApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:BudgetApp"
+    xmlns:theme="clr-namespace:BudgetApp.Themes"
     Shell.FlyoutBehavior="Disabled"
-    Title="BudgetApp">
+    Title="BudgetApp"
+    Shell.TabBarBackgroundColor="{DynamicResource NavigationBarColor}"
+    Shell.TabBarForegroundColor="{DynamicResource PrimaryTextColor}"
+    >
 
-    <local:CustomTabBar x:DataType="local:AppShell">
 
+    <local:CustomTabBar x:DataType="local:AppShell" >
         <Tab Title="Home">
             <ShellContent ContentTemplate="{DataTemplate local:Views.HomeView}"/>
         </Tab>
         <Tab Title="Budget">
             <ShellContent ContentTemplate="{DataTemplate local:Views.BudgetView}"/>
         </Tab>
+        <Tab>
+            <ShellContent Route="Loans" ContentTemplate="{DataTemplate local:Views.LoanView}"/>
+        </Tab>
         <Tab Title="Invest">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.Stocks}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Views.Stocks}"/>
         </Tab>
         <Tab Title="Crypto">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.Crypto}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Views.Crypto}"/>
         </Tab>
     </local:CustomTabBar>
 
     <ShellContent Title="Edit Account"
                   ContentTemplate="{DataTemplate local:Views.EditAccountPage}"/>
-    <ShellContent Route="Loans" ContentTemplate="{DataTemplate local:Views.LoanView} "/>
-        
 </Shell>

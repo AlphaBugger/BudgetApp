@@ -16,17 +16,12 @@
           ColumnDefinitions="*, *, *"
           RowSpacing="20">
 
-                <Image Source="home_background.png"
-               Aspect="AspectFill"
-               Grid.RowSpan="7" 
-               Grid.ColumnSpan="3" />
-
 
         <ImageButton Grid.Row="0" 
                      Grid.Column="0" 
                      Source="dotnet_bot.png" 
                      BorderWidth="1" 
-                     BorderColor="#000" 
+                     BorderColor="{StaticResource SecondaryColor }"
                      CornerRadius="25" 
                      WidthRequest="50" 
                      HeightRequest="50" 
@@ -37,10 +32,10 @@
                 Grid.ColumnSpan="3"
                 Grid.RowSpan="3"
             Margin="10, 0, 10, 0"
-            Stroke="#C49B33"
+            Stroke="{StaticResource SecondaryColor}"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 10"
-            Background="#2B0B98"
+            Background="{StaticResource PrimaryColor}"
             HeightRequest="200"
             Padding="15">
             <Grid RowDefinitions="25,*, 20, *"
@@ -50,7 +45,7 @@
                 Grid.Row="0"
                    Grid.ColumnSpan="3"
                 Text="{Binding Account.Name}"
-                TextColor="White"
+                TextColor="{StaticResource PrimaryTextColor}"
                 FontSize="20"
                 FontAttributes="Bold"/>
                 <Label x:Name="CardNumber"
@@ -58,14 +53,14 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Text="**** **** **** 1234"
-                TextColor="White"
+                TextColor="{StaticResource PrimaryTextColor}"
                 FontSize="16"
                 FontAttributes="Bold"/>
                 <Label
                 Grid.Row="2"
                 Grid.Column="0"
                 Text="Balance"
-                TextColor="White"
+                TextColor="{StaticResource PrimaryTextColor}"
                 FontSize="20"
                 FontAttributes="Bold"
                 VerticalOptions="Center" HorizontalOptions="Start"/>
@@ -73,7 +68,7 @@
                 Grid.Row="3"
                 Grid.Column="0"
                 Text="{Binding Account.Balance, StringFormat='{0:C}'}"
-                TextColor="White"
+                TextColor="{StaticResource PrimaryTextColor}"
                 FontSize="32"
                 FontAttributes="Bold"
                 VerticalOptions="Center" HorizontalOptions="Start"/>
@@ -81,7 +76,7 @@
                 Grid.Row="1"
                 Grid.Column="2"
                 Text="5/27"
-                TextColor="White"
+                TextColor="{StaticResource PrimaryTextColor}"
                 HorizontalOptions="End"/>
             </Grid>
         </Border>
