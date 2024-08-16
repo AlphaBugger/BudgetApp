@@ -5,12 +5,15 @@
     <!-- Colors -->
     <Color x:Key="PageBackgroundColor">White</Color>
     <Color x:Key="NavigationBarColor">#EEEEEE</Color>
+    <Color x:Key="NavigationButtonAccent">#00Ee00</Color>
     <Color x:Key="PrimaryColor">#FFFFFF</Color>
     <Color x:Key="SecondaryColor">#E0E0E0</Color>
     <Color x:Key="PrimaryTextColor">Black</Color>
     <Color x:Key="SecondaryTextColor">#333333</Color>
     <Color x:Key="TertiaryTextColor">#777777</Color>
     <Color x:Key="TransparentColor">Transparent</Color>
+    <Color x:Key="ButtonColor">#00ffff</Color>
+
 
     <!-- Styles -->
     <Style x:Key="ButtonStyle" TargetType="Button">

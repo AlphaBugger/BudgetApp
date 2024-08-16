@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{EB61E2C3-9B7A-4122-8085-9A847026EA46}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.ItemProperties.BudgetApp PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BudgetApp/AppShell.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BudgetApp/Views/EditThemeView.xaml">
     <Files>
-      <File FileName="BudgetApp/Views/HomeView.xaml" Line="7" Column="43" />
+      <File FileName="BudgetApp/Views/HomeView.xaml" />
       <File FileName="BudgetApp/MauiProgram.cs" />
-      <File FileName="BudgetApp/AppShell.xaml" Line="10" Column="5" />
+      <File FileName="BudgetApp/AppShell.xaml" />
       <File FileName="BudgetApp/BudgetApp.csproj" />
       <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml" />
       <File FileName="BudgetApp/Views/HomeView.xaml.cs" />
       <File FileName="BudgetApp/Views/Templates/QuickPaymentViewComponent.xaml.cs" />
       <File FileName="BudgetApp/Views/InvestView.xaml" />
-      <File FileName="BudgetApp/Views/Stocks.xaml" Line="1" Column="1" />
+      <File FileName="BudgetApp/Views/Stocks.xaml" />
       <File FileName="BudgetApp/Views/Crypto.xaml" />
       <File FileName="BudgetApp/Views/Stocks.xaml.cs" />
       <File FileName="BudgetApp/Views/Templates/CardView.xaml" />
@@ -30,53 +31,54 @@
       <File FileName="BudgetApp/Models/PaymentClass.cs" />
       <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" />
       <File FileName="BudgetApp/Viewmodels/CryptoViewModel.cs" />
-      <File FileName="BudgetApp/Viewmodels/StockViewModel.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/Views/LoanView.xaml" Line="6" Column="14" />
-      <File FileName="BudgetApp/Platforms/iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/Viewmodels/AccountViewModel.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/Services/AccountService.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/Platforms/iOS/Program.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Viewmodels/StockViewModel.cs" />
+      <File FileName="BudgetApp/Views/LoanView.xaml" />
+      <File FileName="BudgetApp/Platforms/iOS/AppDelegate.cs" />
+      <File FileName="BudgetApp/Viewmodels/AccountViewModel.cs" />
+      <File FileName="BudgetApp/Services/AccountService.cs" />
+      <File FileName="BudgetApp/Platforms/iOS/Program.cs" />
       <File FileName="BudgetApp/Models/AccountClass.cs" />
-      <File FileName="BudgetApp/Services/DatabaseService.cs" Line="1" Column="1" />
+      <File FileName="BudgetApp/Services/DatabaseService.cs" />
       <File FileName="BudgetApp/Views/EditAccountPage.xaml" />
       <File FileName="BudgetApp/Models/LoanClass.cs" />
       <File FileName="BudgetApp/Views/LoanView.xaml.cs" />
-      <File FileName="BudgetApp/Viewmodels/PaymentViewModel.cs" Line="29" Column="13" />
-      <File FileName="BudgetApp/Viewmodels/LoanViewModel.cs" Line="33" Column="1" />
+      <File FileName="BudgetApp/Viewmodels/PaymentViewModel.cs" />
+      <File FileName="BudgetApp/Viewmodels/LoanViewModel.cs" />
       <File FileName="BudgetApp/Views/BudgetView.xaml" />
-      <File FileName="BudgetApp/AppShell.xaml.cs" Line="15" Column="1" />
+      <File FileName="BudgetApp/AppShell.xaml.cs" />
       <File FileName="BudgetApp/Platforms/MacCatalyst/Program.cs" />
       <File FileName="BudgetApp/Platforms/MacCatalyst/AppDelegate.cs" />
-      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellHandler.cs" Line="16" Column="8" />
-      <File FileName="BudgetApp/App.xaml" Line="13" Column="15" />
-      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellItemRenderer.cs" Line="5" Column="20" />
-      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellTabBarAppearanceTracker.cs" Line="83" Column="19" />
-      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellToolbarAppearanceTracker.cs" Line="22" Column="32" />
+      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellHandler.cs" />
+      <File FileName="BudgetApp/App.xaml" />
+      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellItemRenderer.cs" />
+      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellTabBarAppearanceTracker.cs" />
+      <File FileName="BudgetApp/Platforms/MacCatalyst/CustomShellToolbarAppearanceTracker.cs" />
       <File FileName="../../../.nuget/packages/communitytoolkit.maui/9.0.2/readme.txt" />
       <File FileName="BudgetApp/Platforms/iOS/Info.plist" />
       <File FileName="BudgetApp/Platforms/MacCatalyst/Info.plist" />
-      <File FileName="BudgetApp/CustomTabBar.cs" Line="1" Column="1" />
-      <File FileName="BudgetApp/Themes/LightTheme.xaml" Line="27" Column="1" />
-      <File FileName="BudgetApp/Themes/LightTheme.xaml.cs" Line="7" Column="5" />
+      <File FileName="BudgetApp/CustomTabBar.cs" />
+      <File FileName="BudgetApp/Themes/LightTheme.xaml" />
+      <File FileName="BudgetApp/Themes/LightTheme.xaml.cs" />
+      <File FileName="BudgetApp/Views/EditThemeView.xaml" Line="26" Column="1" />
+      <File FileName="BudgetApp/Views/EditThemeView.xaml.cs" />
+      <File FileName="BudgetApp/Services/ThemeManager.cs" />
+      <File FileName="BudgetApp/Themes/DarkTheme.xaml.cs" />
+      <File FileName="BudgetApp/Themes/CustomTheme.xaml" />
+      <File FileName="BudgetApp/Themes/CustomTheme.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BudgetApp">
+          <Node name="BudgetApp" expanded="True">
             <Node name="BudgetApp">
-              <Node name="Themes" expanded="True">
-                <Node name="LightTheme.xaml" expanded="True" />
-              </Node>
               <Node name="Views" expanded="True">
-                <Node name="LoanView.xaml" expanded="True" />
+                <Node name="HomeView.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="AppShell.xaml" expanded="True" selected="True" />
+              <Node name="AppShell.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>

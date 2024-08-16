@@ -1,9 +1,18 @@
-﻿namespace BudgetApp.Themes;
+﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
 
-public partial class LightTheme : ResourceDictionary
+namespace BudgetApp.Themes
 {
-	public LightTheme()
-	{
-		InitializeComponent();
-	}
+    public partial class LightTheme : ResourceDictionary
+    {
+        public Color NavigationBarColor => (Color)this["NavigationBarColor"];
+        public Color NavigationButtonAccent => (Color)this["NavigationButtonAccent"];
+        public Color PrimaryColor => (Color)this["PrimaryColor"];
+        public Color PrimaryTextColor => (Color)this["PrimaryTextColor"];
+
+        public LightTheme()
+        {
+            InitializeComponent();
+        }
+    }
 }

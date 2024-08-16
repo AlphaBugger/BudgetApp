@@ -3,32 +3,42 @@
              x:Class="BudgetApp.Views.LoanView"
              xmlns:vm="clr-namespace:BudgetApp.Viewmodels"
              x:Name="LoanPage"
+             Title="Loans"
+             Shell.NavBarIsVisible="False"
+             Padding="15"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
              >
 
     <ContentPage.BindingContext>
         <vm:LoanViewModel />
     </ContentPage.BindingContext>
 
-    <Grid RowDefinitions="Auto, Auto, *"
-          Padding="10">
+    <Grid RowDefinitions="Auto, Auto, *, 100"
+          Padding="10"
+          >
 
-        <CollectionView Margin="0"
+        <CollectionView Margin="10"
                 HeightRequest="100"
                 ItemsSource="{Binding Loans}"
                 HorizontalScrollBarVisibility="Always"
-                Grid.Row="0">
+                Grid.Row="0"
+                >
     <CollectionView.ItemsLayout>
         <LinearItemsLayout Orientation="Horizontal"/>
     </CollectionView.ItemsLayout>
 
     <CollectionView.ItemTemplate>
         <DataTemplate>
-            <Border Padding="0" Margin="0">
+            <Border Padding="15" Margin="10" BackgroundColor="{DynamicResource PrimaryColor}"
+                    Stroke="{DynamicResource SecondaryColor}"
+                    StrokeShape="RoundRectangle 10">
                 <Grid>
                     
                     <StackLayout>
-                        <Label Text="{Binding LoanAmount}" />
-                        <Label Text="{Binding NumberOfMonths}" />
+                        <Label Text="{Binding LoanAmount}"
+                               TextColor="{DynamicResource PrimaryTextColor}"/>
+                        <Label Text="{Binding NumberOfMonths}"
+                               TextColor="{DynamicResource PrimaryTextColor}"/>
                         <Button
                         Command="{Binding
                             Source={RelativeSource AncestorType={x:Type ContentPage}},
@@ -36,8 +46,12 @@
                         CommandParameter="{Binding .}"
                         HorizontalOptions="FillAndExpand"
                         WidthRequest="75"
-                        CornerRadius="0"
-                        Text="Select"/>
+                        CornerRadius="10"
+                        Text="Select"
+                        TextColor="{DynamicResource ButtonColor}"
+                        BackgroundColor="{DynamicResource TertiaryTextColor}"
+                        BorderColor="{DynamicResource SecondaryColor}"/>
+
                     </StackLayout>
                 </Grid>
             </Border>
@@ -49,47 +63,66 @@
         <StackLayout Grid.Row="1">
             <Entry Placeholder="Loan Amount"
                Text="{Binding LoanAmount, Mode=TwoWay}"
-               Keyboard="Numeric" />
+               TextColor="{DynamicResource PrimaryTextColor}"
+               Keyboard="Numeric"
+               BackgroundColor="{DynamicResource PrimaryColor}"
+               Margin="10"/>
 
         <Entry Placeholder="Interest Rate (%)"
                Text="{Binding InterestRate, Mode=TwoWay}"
-               Keyboard="Numeric" />
+               TextColor="{DynamicResource PrimaryTextColor}"
+               Keyboard="Numeric"
+               Background="{DynamicResource PrimaryColor}"
+               Margin="10"/>
 
         <Entry Placeholder="Number of Months"
                Text="{Binding NumberOfMonths, Mode=TwoWay}"
-               Keyboard="Numeric" />
+               TextColor="{DynamicResource PrimaryTextColor}"
+               Keyboard="Numeric"
+               BackgroundColor="{DynamicResource PrimaryColor}"
+               Margin="10"/>
 
         <!-- Add Loan Button -->
         <Button Text="Add Loan"
-                Command="{Binding AddLoanCommand}" />
-
-        <Label Text="{Binding LoanAmount}"/>
-        <Label Text="{Binding InterestRate}"/>
-        <Label Text="{Binding NumberOfMonths}"/>
-        <Label Text="{Binding DebugMessage}"/>
+                TextColor="{DynamicResource PrimaryTextColor}"
+                Command="{Binding AddLoanCommand}"
+                BackgroundColor="{DynamicResource PrimaryColor}"
+                CornerRadius="10"
+                BorderColor="{DynamicResource SecondaryColor}"
+                Margin="10"/>
             </StackLayout>
 
         <!-- List of Monthly Payments -->
         <CollectionView ItemsSource="{Binding Payments}"
                         VerticalScrollBarVisibility="Always"
-                        Grid.Row="2">
+                        Grid.Row="2"
+                        BackgroundColor="{DynamicResource PrimaryColor}">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border>
+                    <Border Background="{DynamicResource PrimaryColor}"
+                            Stroke="{DynamicResource SecondaryColor}">
                         <Grid Padding="10"
                               ColumnDefinitions="*,*,*,*,*">
 
-                            <Label Grid.Column="0" Text="{Binding Month}" />
-                            <Label Grid.Column="1" Text="{Binding PrincipalAmount, StringFormat='Principal: {0:C}'}" />
-                            <Label Grid.Column="2" Text="{Binding InterestAmount, StringFormat='Interest: {0:C}'}" />
-                            <Label Grid.Column="3" Text="{Binding PaymentAmount, StringFormat='Total: {0:C}'}" />
+                            <Label Grid.Column="0" Text="{Binding Month}"
+                                   TextColor="{DynamicResource PrimaryTextColor}"/>
+                            <Label Grid.Column="1" Text="{Binding PrincipalAmount, StringFormat='Principal: {0:C}'}"
+                                   TextColor="{DynamicResource PrimaryTextColor}"/>
+                            <Label Grid.Column="2" Text="{Binding InterestAmount, StringFormat='Interest: {0:C}'}"
+                                   TextColor="{DynamicResource PrimaryTextColor}"/>
+                            <Label Grid.Column="3" Text="{Binding PaymentAmount, StringFormat='Total: {0:C}'}"
+                                   TextColor="{DynamicResource PrimaryTextColor}"/>
                             <Button Grid.Column="4" Text="Pay" Command="{Binding
                             Source={RelativeSource AncestorType={x:Type ContentPage}},
                             Path=BindingContext.PaySelected}"
-                        CommandParameter="{Binding .}"/>
+                        CommandParameter="{Binding .}"
+                        TextColor="{DynamicResource ButtonColor}"
+                        BorderColor="{DynamicResource NavigationBarColor}"
+                        BackgroundColor="{DynamicResource NavigationBarColor}"
+                        CornerRadius="10"/>
                         </Grid>
                     </Border>
                 </DataTemplate>

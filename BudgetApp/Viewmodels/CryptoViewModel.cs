@@ -41,10 +41,6 @@ namespace BudgetApp.Viewmodels
             OnPropertyChanged(nameof(Account));
         }
 
-        private async void CalculateGain()
-        {
-            throw new NotImplementedException();
-        }
 
     }
 }

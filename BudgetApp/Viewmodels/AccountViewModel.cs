@@ -7,8 +7,8 @@ namespace BudgetApp.Viewmodels
 {
     public class AccountViewModel : NotifyChangesService
     {
-        private readonly AccountService _accountService;
-        private AccountClass _account;
+        private readonly AccountService? _accountService;
+        private AccountClass? _account;
 
         public ICommand EditAccountCommand { get; }
 

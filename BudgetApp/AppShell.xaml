@@ -32,4 +32,6 @@
 
     <ShellContent Title="Edit Account"
                   ContentTemplate="{DataTemplate local:Views.EditAccountPage}"/>
+    <ShellContent Title="Edit Theme"
+                  ContentTemplate="{DataTemplate local:Views.EditThemeView}"/>
 </Shell>

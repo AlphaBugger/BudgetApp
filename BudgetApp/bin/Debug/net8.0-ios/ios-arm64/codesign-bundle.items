@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_CodesignBundle Include="BudgetApp.app">
+      <CodesignSigningKey>B2F13D4776E44DDE15C9E5A89CC31380BAD7EBF3</CodesignSigningKey>
+      <CodesignEntitlements>/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-ios/ios-arm64/Entitlements.xcent</CodesignEntitlements>
+      <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
+      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
+      <RequireCodeSigning>true</RequireCodeSigning>
+      <CodesignExtraArgs></CodesignExtraArgs>
+      <CodesignResourceRules></CodesignResourceRules>
+      <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
+      <CodesignKeychain></CodesignKeychain>
+      <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
+      <SourceProjectPath>/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp</SourceProjectPath>
+    </_CodesignBundle>
+  </ItemGroup>
+</Project>

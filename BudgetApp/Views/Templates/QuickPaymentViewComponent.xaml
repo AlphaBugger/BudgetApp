@@ -5,10 +5,10 @@
 
 
     <Border     Margin="10, 0, 10, 0"
-                Stroke="#C49B33"
+                Stroke="{DynamicResource SecondaryColor}"
                 StrokeThickness="2"
                 StrokeShape="RoundRectangle 10"
-                Background="#2B0B98"
+                Background="{DynamicResource PrimaryColor}"
                 HeightRequest="70">
             <Grid RowDefinitions="*, *"
                   ColumnDefinitions="Auto,Auto,*"
@@ -17,24 +17,34 @@
                     Grid.Row="0"
                        Grid.ColumnSpan="3"
                     Text="Loans"
-                    TextColor="White"
+                    TextColor="{DynamicResource PrimaryTextColor}"
                     FontSize="16"
                     FontAttributes="Bold"/>
                 <Label
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Balance Due:"
-                    TextColor="White"
+                    TextColor="{DynamicResource PrimaryTextColor}"
                     FontSize="16"
                     FontAttributes="Bold"/>
                 <Label
                     Grid.Row="1"
                     Grid.Column="1"
                     Text="0"
-                    TextColor="White"
+                    TextColor="{DynamicResource PrimaryTextColor}"
                     FontSize="16"
                     FontAttributes="Bold"/>
-                <Button Grid.RowSpan="2" Grid.Column="2" Text="Pay Now" FontSize="16" VerticalOptions="Center" HorizontalOptions="End" Padding="5" Margin="5,5,5,3"/>
+                <Button Grid.RowSpan="2"
+                        Grid.Column="2"
+                        Text="Pay Now"
+                        TextColor="{DynamicResource PrimaryTextColor}"
+                        FontSize="16"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Padding="5"
+                        Margin="5,5,5,3"
+                        BackgroundColor="{DynamicResource ButtonColor}"
+                        CornerRadius="10"/>
              </Grid>
         </Border>
 

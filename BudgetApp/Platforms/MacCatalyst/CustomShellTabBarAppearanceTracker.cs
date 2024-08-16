@@ -4,14 +4,22 @@ using Microsoft.Maui.Controls.Platform.Compatibility;
 using UIKit;
 using BudgetApp.Views;
 using Microsoft.Maui.Controls;
+using BudgetApp.Themes;
+using Microsoft.Maui.Platform;
 
 namespace BudgetApp
 {
     class CustomShellTabBarAppearanceTracker : ShellTabBarAppearanceTracker
     {
+        public LightTheme? LightTheme { get; private set; }
+        public Color? NavColor { get; private set; }
 
         public override void UpdateLayout(UITabBarController? controller)
         {
+            LightTheme = new LightTheme();
+            Color navColor = LightTheme.NavigationButtonAccent;
+
+            UIColor ButtonColor = navColor.ToPlatform();
             if (controller == null) return; // Ensure controller is not null
 
             base.UpdateLayout(controller);
@@ -88,17 +96,15 @@ namespace BudgetApp
             controller.TabBar.Layer.Mask = shapeLayer;
 
             // Create a button and add it to the TabBar
-            UIButton _customButton = new UIButton(UIButtonType.System)
+            UIButton _customButton = new(UIButtonType.System)
             {
-                BackgroundColor = UIColor.FromRGB(238, 238, 238)
-                
+                BackgroundColor = ButtonColor,
+                // Set the button's size
+
+
+                // Set the button's frame
+                Frame = new CGRect(buttonX, buttonY, buttonRadius, buttonRadius)
             };
-
-            // Set the button's size
-           
-
-            // Set the button's frame
-            _customButton.Frame = new CGRect(buttonX, buttonY, buttonRadius, buttonRadius);
 
             // Make the button circular
             _customButton.Layer.CornerRadius = buttonRadius / 2;

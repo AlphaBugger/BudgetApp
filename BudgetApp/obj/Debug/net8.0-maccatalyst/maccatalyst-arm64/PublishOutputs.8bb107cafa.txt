@@ -36,6 +36,7 @@
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/runtimeconfig.bin
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/CommunityToolkit.Maui.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/CommunityToolkit.Maui.Core.dll
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/CommunityToolkit.Mvvm.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/publish/../BudgetApp.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll

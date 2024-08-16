@@ -16,12 +16,12 @@ namespace BudgetApp.Viewmodels
         private double _loanAmount;
         private double _interestRate;
         private int _numberOfMonths;
-        private ObservableCollection<LoanClass> _loans;
+        private ObservableCollection<LoanClass>? _loans;
         private readonly AccountService _accountService;
         public ObservableCollection<MonthlyPayment> _payments;
-        private AccountClass _account;
+        private AccountClass? _account;
 
-        private string _debugMessage;
+        private string? _debugMessage;
 
         public LoanViewModel()
         {
@@ -38,7 +38,7 @@ namespace BudgetApp.Viewmodels
             LoadAccount();
         }
 
-        public AccountClass Account
+        public AccountClass? Account
         {
             get => _account;
             private set => SetProperty(ref _account, value);
@@ -50,7 +50,7 @@ namespace BudgetApp.Viewmodels
             OnPropertyChanged(nameof(Account));
         }
 
-        public string DebugMessage
+        public string? DebugMessage
         {
             get => _debugMessage;
             set => SetProperty(ref _debugMessage, value);
@@ -74,7 +74,7 @@ namespace BudgetApp.Viewmodels
             set => SetProperty(ref _numberOfMonths, value);
         }
 
-        public ObservableCollection<LoanClass> Loans
+        public ObservableCollection<LoanClass>? Loans
         {
             get => _loans;
             set => SetProperty(ref _loans, value);
@@ -96,11 +96,11 @@ namespace BudgetApp.Viewmodels
         private async void LoadLoans()
         {
             var loanList = await _loanService.GetItemsAsync();
-            Loans.Clear();
+            Loans?.Clear();
             Payments.Clear();
             foreach (var loan in loanList)
             {
-                Loans.Add(loan);
+                Loans?.Add(loan);
             }
 
 
@@ -110,7 +110,7 @@ namespace BudgetApp.Viewmodels
         {
             var newLoan = new LoanClass(LoanAmount, InterestRate, NumberOfMonths);
             await _loanService.SaveItemAsync(newLoan);
-            Loans.Add(newLoan);
+            Loans?.Add(newLoan);
         }
 
         private async Task DisplayLoanSelected(LoanClass loan)
@@ -131,7 +131,7 @@ namespace BudgetApp.Viewmodels
                 DebugMessage = "No payments available for this loan. Removing loan.";
 
                 // Remove the loan from the Loans collection
-                Loans.Remove(loan);
+                Loans?.Remove(loan);
 
                 // Remove the loan from the database
                 await _loanService.DeleteItemAsync(loan);
@@ -157,7 +157,7 @@ namespace BudgetApp.Viewmodels
                 
                 var loan = await _loanService.GetItemAsync(selection.Id);
                 await _loanService.DeleteItemAsync(loan);
-                var loanToRemove = Loans.FirstOrDefault(l => l.Id == loan.Id);
+                var loanToRemove = Loans?.FirstOrDefault(l => l.Id == loan.Id);
                 if (loanToRemove != null)
                 {
                     Loans.Remove(loanToRemove);

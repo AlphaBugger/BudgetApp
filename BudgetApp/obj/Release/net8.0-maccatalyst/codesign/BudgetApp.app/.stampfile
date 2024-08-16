@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Release/net8.0-maccatalyst/Entitlements.xcent /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Release/net8.0-maccatalyst/BudgetApp.app

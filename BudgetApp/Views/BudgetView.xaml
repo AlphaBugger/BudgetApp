@@ -4,6 +4,9 @@
              x:Class="BudgetApp.Views.BudgetView"
              xmlns:viewModel="clr-namespace:BudgetApp.Viewmodels"
              xmlns:local="clr-namespace:BudgetApp.Views"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Title="Payments"
+
              >
 
         <ContentPage.BindingContext>
@@ -11,13 +14,40 @@
         </ContentPage.BindingContext>
 
         <StackLayout Padding="10">
-        <Label  Text="{Binding Account.Balance, StringFormat='Balance: {0:C}'}"/>
+        <Label Text="{Binding Account.Balance, StringFormat='Balance: {0:C}'}"
 
-        <Entry Text="{Binding Money, Mode=TwoWay}" Placeholder="Enter Amount" Keyboard="Numeric"/>
-            <Picker ItemsSource="{Binding Categories}" SelectedItem="{Binding SpendingCategory}"/>
-            <Button Text="Add payment" Command="{Binding AddPaymentCommand}"/>
+               TextColor="{DynamicResource PrimaryTextColor}"/>
+
+        <Border Background="{DynamicResource PrimaryColor}"
+               Stroke="{DynamicResource SecondaryColor}"
+               StrokeThickness="2"
+               StrokeShape="RoundRectangle 10">
+
+            <Entry Text="Sample Text"
+                   TextColor="{DynamicResource PrimaryTextColor}"
+                   BackgroundColor="Transparent"/>
+        </Border>
+        <Border Background="{DynamicResource PrimaryColor}"
+               Stroke="{DynamicResource SecondaryColor}"
+               StrokeThickness="2"
+               StrokeShape="RoundRectangle 10">
+            <Picker ItemsSource="{Binding Categories}"
+                    SelectedItem="{Binding SpendingCategory}"
+                    BackgroundColor ="{DynamicResource PrimaryColor}"
+                    TextColor="{DynamicResource PrimaryTextColor}"/>
+            </Border>
+
+            <Button Text="Add payment"
+                    TextColor="{DynamicResource PrimaryTextColor}"
+                    Command="{Binding AddPaymentCommand}"
+                    BackgroundColor="{DynamicResource ButtonColor}"
+                    BorderColor="{DynamicResource SecondaryColor}"
+                    BorderWidth="2"
+                    CornerRadius="10"/>
             <Label Text="{Binding Total, StringFormat='Total: {0:C}'}" FontSize="22"/>
-            <ListView ItemsSource="{Binding Payments}" SelectedItem="OnItemSelected">
+            <ListView ItemsSource="{Binding Payments}"
+                      SelectedItem="OnItemSelected"
+                      BackgroundColor="{DynamicResource PrimaryColor}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell

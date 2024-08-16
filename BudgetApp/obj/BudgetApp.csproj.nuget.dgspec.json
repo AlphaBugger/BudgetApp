@@ -44,6 +44,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,6 +58,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
             },
             "M.BindableProperty.Generator": {
               "target": "Package",
@@ -109,6 +118,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
             "M.BindableProperty.Generator": {
               "target": "Package",
               "version": "[0.11.1, )"
@@ -163,6 +176,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
             },
             "M.BindableProperty.Generator": {
               "target": "Package",
@@ -231,6 +248,9 @@
           "#import": []
         },
         "maccatalyst-arm64": {
+          "#import": []
+        },
+        "maccatalyst-x64": {
           "#import": []
         }
       }

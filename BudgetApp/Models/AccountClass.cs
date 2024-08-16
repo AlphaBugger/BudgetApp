@@ -8,9 +8,9 @@ namespace BudgetApp.Models
     public class AccountClass : NotifyChangesService
     {
         [PrimaryKey, AutoIncrement]
-        public int id {  get; set; }
+        public int Id {  get; set; }
         private string _name;
-        private string _accountNumber;
+        private string? _accountNumber;
         private double _balance;
         private double _stocksBalance;
         private double _cryptoBalance;
@@ -20,7 +20,7 @@ namespace BudgetApp.Models
             set => SetProperty(ref _name, value);
         }
 
-        public string AccountNumber
+        public string? AccountNumber
         {
             get => _accountNumber;
             set => SetProperty(ref _accountNumber, value);

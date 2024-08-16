@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="BudgetApp.app/Contents/MacOS/BudgetApp">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>BudgetApp.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>BudgetApp.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Release/net8.0-maccatalyst/mtouch-symbols.list</SymbolFile>
+      <DSymName>BudgetApp.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

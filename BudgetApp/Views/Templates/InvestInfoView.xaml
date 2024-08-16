@@ -6,10 +6,10 @@
 
     <Border 
             Margin="10, 0, 10, 0"
-            Stroke="#C49B33"
+            Stroke="{DynamicResource SecondaryColor}"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 10"
-            Background="#2B0B98"
+            Background="{DynamicResource PrimaryColor}"
             HeightRequest="200"
             Padding="15">
         <Grid RowDefinitions="25,*, *, *">
@@ -18,14 +18,14 @@
                 Grid.Row="0"
                 Grid.ColumnSpan="3"
                 Text="InvestementType"
-                TextColor="White"
+                TextColor="{DynamicResource PrimaryTextColor}"
                 FontSize="20"
                 FontAttributes="Bold"/>
             <Label
                 Grid.Row="1"
                 Grid.Column="0"
                 Text="Balance:"
-                TextColor="White"
+                TextColor="{DynamicResource PrimaryTextColor}"
                 FontSize="20"
                 FontAttributes="Bold"
                 VerticalOptions="Center" HorizontalOptions="Start"/>
@@ -33,7 +33,7 @@
                 Grid.Row="2"
                 Grid.Column="0"
                 Text="{Binding Balance, StringFormat='{0:C}'}"
-                TextColor="White"
+                TextColor="{DynamicResource PrimaryTextColor}"
                 FontSize="32"
                 FontAttributes="Bold"
                 VerticalOptions="Center" HorizontalOptions="Start"/>
@@ -41,7 +41,7 @@
                 Grid.Row="3"
                 Grid.Column="0"
                 Text="{Binding Gain}"
-                TextColor="White"
+                TextColor="{DynamicResource PrimaryTextColor}"
                 FontSize="20"
                 FontAttributes="Bold"
                 VerticalOptions="Center" HorizontalOptions="Start"/>

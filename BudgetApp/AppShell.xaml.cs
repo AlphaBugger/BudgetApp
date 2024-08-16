@@ -8,6 +8,8 @@ public partial class AppShell : Shell
 		InitializeComponent();
 		Routing.RegisterRoute(nameof(EditAccountPage), typeof(EditAccountPage));
         Routing.RegisterRoute("Loans", typeof(LoanView));
+		Routing.RegisterRoute(nameof(EditThemeView), typeof(EditThemeView));
+
     }
 
 }

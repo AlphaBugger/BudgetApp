@@ -3,6 +3,7 @@
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/BudgetApp.pdb
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Maui.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Maui.Core.dll
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/CommunityToolkit.Mvvm.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Microsoft.Extensions.Configuration.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Microsoft.Extensions.DependencyInjection.dll
@@ -310,6 +311,7 @@
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/ref/BudgetApp.dll
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/CommunityToolkit.Maui.Core.stamp
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/CommunityToolkit.Maui.stamp
+/Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/CommunityToolkit.Mvvm.stamp
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/Microsoft.CSharp.stamp
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/Microsoft.Extensions.Configuration.Abstractions.stamp
 /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resourcestamps/Microsoft.Extensions.Configuration.stamp

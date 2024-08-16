@@ -20,6 +20,10 @@ public partial class HomeView : ContentPage
         await Shell.Current.GoToAsync("EditAccountPage");
     }
 
+    private async void Button_Clicked(Object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("EditThemeView");
+    }
 }
 
 

@@ -9,7 +9,7 @@ namespace BudgetApp.Viewmodels
 {
     public class StockViewModel : NotifyChangesService
     {
-        private string _gain;
+        private string? _gain;
         private AccountClass _account;
         private AccountService _accountService;
         public string InvestmentType {  get; set; }
@@ -21,7 +21,7 @@ namespace BudgetApp.Viewmodels
         }
 
 
-        public string Gain
+        public string? Gain
         {
             get => _gain;
             set => SetProperty(ref _gain, value);

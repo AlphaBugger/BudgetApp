@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign B2F13D4776E44DDE15C9E5A89CC31380BAD7EBF3 --entitlements /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/obj/Debug/net8.0-ios/ios-arm64/Entitlements.xcent /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/ios-arm64/BudgetApp.app
