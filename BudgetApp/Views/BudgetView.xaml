@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:BudgetApp.Views"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
              Title="Payments"
-
+Shell.NavBarIsVisible="False"
              >
 
         <ContentPage.BindingContext>
@@ -23,7 +23,7 @@
                StrokeThickness="2"
                StrokeShape="RoundRectangle 10">
 
-            <Entry Text="Sample Text"
+            <Entry Text="{Binding Money}"
                    TextColor="{DynamicResource PrimaryTextColor}"
                    BackgroundColor="Transparent"/>
         </Border>
@@ -45,6 +45,23 @@
                     BorderWidth="2"
                     CornerRadius="10"/>
             <Label Text="{Binding Total, StringFormat='Total: {0:C}'}" FontSize="22"/>
+
+            <!-- <CollectionView Margin="10"
+                            HeightRequest="100"
+                            ItemsSource="{Binding Payments}">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Vertical"/>
+                            </CollectionView.ItemsLayout>
+
+                            <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                            <TextCell
+                            Text="{Binding Money, StringFormat='Amount: {0:C}'}"
+                            Detail="{Binding Categories, StringFormat='Category:{0}'}"/>
+                            </DataTemplate>
+                            </CollectionView.ItemTemplate>
+
+            </CollectionView> -->
             <ListView ItemsSource="{Binding Payments}"
                       SelectedItem="OnItemSelected"
                       BackgroundColor="{DynamicResource PrimaryColor}">

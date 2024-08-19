@@ -10,10 +10,10 @@ class CustomShellHandler : ShellRenderer
         return new CustomShellTabBarAppearanceTracker();
     }
 
-    protected override IShellNavBarAppearanceTracker CreateNavBarAppearanceTracker()
-    {
-        return new CustomShellToolbarAppearanceTracker(this, base.CreateNavBarAppearanceTracker());
-    }
+    // protected override IShellNavBarAppearanceTracker CreateNavBarAppearanceTracker()
+    // {
+    //     return new CustomShellToolbarAppearanceTracker(this, base.CreateNavBarAppearanceTracker());
+    // }
 
     protected override IShellItemRenderer CreateShellItemRenderer(ShellItem item)
     {

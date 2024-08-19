@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModel="clr-namespace:BudgetApp.Viewmodels"
              x:Class="BudgetApp.Views.EditAccountPage"
-             Title="EditAccountPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
     <ContentPage.BindingContext>

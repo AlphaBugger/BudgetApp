@@ -3,16 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BudgetApp.Themes.CustomTheme">
     <!-- Colors -->
-    <Color x:Key="PageBackgroundColor">White</Color>
-    <Color x:Key="NavigationBarColor">#FF0000</Color>
-    <Color x:Key="NavigationButtonAccent">#0000FF</Color>
-    <Color x:Key="PrimaryColor">#FFFFFF</Color>
-    <Color x:Key="SecondaryColor">#E0E0E0</Color>
-    <Color x:Key="PrimaryTextColor">Black</Color>
-    <Color x:Key="SecondaryTextColor">#333333</Color>
-    <Color x:Key="TertiaryTextColor">#777777</Color>
-    <Color x:Key="TransparentColor">Transparent</Color>
-    <Color x:Key="ButtonColor">#00ffff</Color>
+    <Color x:Key="PageBackgroundColor">#F0F4F8</Color> <!-- Light grayish-blue background -->
+    <Color x:Key="NavigationBarColor">#007BFF</Color> <!-- Bright blue for navigation bar -->
+    <Color x:Key="NavigationButtonAccent">#FFD700</Color> <!-- Gold for navigation button accent -->
+
+    <!-- Primary and Secondary Colors -->
+    <Color x:Key="PrimaryColor">#FF6F61</Color> <!-- Coral for primary elements -->
+    <Color x:Key="SecondaryColor">#6C757D</Color> <!-- Slate gray for secondary elements -->
+
+    <!-- Text Colors -->
+    <Color x:Key="PrimaryTextColor">#212529</Color> <!-- Dark gray for primary text -->
+    <Color x:Key="SecondaryTextColor">#495057</Color> <!-- Medium gray for secondary text -->
+    <Color x:Key="TertiaryTextColor">#868E96</Color> <!-- Light gray for tertiary text -->
+
+    <!-- Additional Colors -->
+    <Color x:Key="TransparentColor">Transparent</Color> <!-- For transparent backgrounds -->
+    <Color x:Key="ButtonColor">#28A745</Color> <!-- Green for buttons -->
 
 
     <!-- Styles -->

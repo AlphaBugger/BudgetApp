@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/eduardzepciuc/Desktop/Practica/BudgetApp/BudgetApp/bin/Debug/net8.0-ios/iossimulator-arm64/BudgetApp.app/libSystem.Net.Security.Native.dylib

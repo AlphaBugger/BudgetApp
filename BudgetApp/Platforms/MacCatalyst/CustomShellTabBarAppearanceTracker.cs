@@ -120,7 +120,7 @@ namespace BudgetApp
             _customButton.SetTitle("Loan", UIControlState.Normal);
         }
 
-        private void HandleButtonClick(UITabBarController controller)
+        private static void HandleButtonClick(UITabBarController controller)
         {
             // Assuming the LoanView is the second tab (index 1)
             // You should adjust the index based on the actual position of your Loan tab

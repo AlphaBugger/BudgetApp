@@ -6,7 +6,7 @@
              Title="Crypto"
              xmlns:viewModels="clr-namespace:BudgetApp.Viewmodels"
                           BackgroundColor="{DynamicResource PageBackgroundColor}"
-
+Shell.NavBarIsVisible="False"
              >
     <ContentPage.BindingContext>
         <viewModels:CryptoViewModel/>
